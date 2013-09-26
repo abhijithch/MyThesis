@@ -1,0 +1,90 @@
+\documentclass[mai, 10pt, english, crop, info, print]{liuthesis}
+
+% Pasted from Niklas main.tex
+      \usepackage{amsmath,amssymb}
+      \usepackage[table]{xcolor}
+      %\usepackage{makeidx}
+      \usepackage{savesym}
+      \savesymbol{AND}
+      %\usepackage{algorithmic}
+      \usepackage{algorithm}
+      %\usepackage{tikz}
+      \usepackage{pdfpages}
+      \usepackage{subfigure}
+      \usepackage{graphicx}
+      \usepackage{algpseudocode}
+      \usepackage{algorithmicx}
+      
+      %\usetikzlibrary{positioning,chains,fit,shapes,calc}
+
+
+      \DeclareMathOperator{\diag}{diag}
+      \DeclareMathOperator{\rank}{rank}
+      \newcommand{\x}{\times}
+%
+
+\author{Abhijith Chandraprabhu}
+\title{Collaborative Filtering using Temporal Analysis}{Svenk Titel}
+
+\thesisDate{9}{19}{YYYY}
+\thesisNo{LiTH-MAT-EX{-}{-}YY/XXXX{-}{-}SE}
+
+\thesisDivision{Division of Applied Mathematics}
+\URL[http://math.liu.se]{http://www.ep.liu.se}
+
+\subject{Department of Mathematics}
+\keywords{Netflix, Recommender Systems, RMSE, Matrix factorization, Sparse SVD,
+ALS-WR, Low-Rank Approximation,}
+
+\examiner{
+  Lars Eldén \AT \textsc{mai}, Linköpings universitet}
+
+\supervisor{
+  Berkant Savas \AT \textsc{mai}, Linköpings universitet}
+
+\abstract{In todays digital world Information in the form of large scale data
+has become a very important source of knowledge, this is largely owed to the
+advances in Data Sciences. One of the recent applications of data mining is to
+find meaningful and useful relationship between groups of entities, for
+example between users and movies as in the case of NETFLIX. With the NETLIX
+competition, the field of Recommender Systems which helps in presenting users
+with relevant items based on the history rather than an explicit search query,
+has generated great interest from researchers and this work is one such attempt.
+When we talk about users' preferences it is natural that it evolves, hence in
+this work we have tried to account for a new dimension, i.e time, while building
+the model. On the lines on the NETFLIX competition, the task of predicting
+preferences involves the ratings of the movies given by users and it is the
+value of this rating which we try to predict. On the lines on the NETFLIX
+competition, the task of predicting preferences involves the ratings of the
+movies by users and it the value of this rating which we try to predict. The
+data upon which the algorithm is built consists of around 1 million ratings
+given by around half a million users to around 18k movies. Collaborative
+Filtering techniques have been employed, where based upon a model which has
+information of users and movies we try to fetch prediction of new ratings by
+factoring the user space and movie space and finding a relationship between the
+required pair. Matrix factorization is done based on Singular Value
+Decomposition, and owing to the inherent nature of SVD to handle
+sparse data inefficiently an alternate method based on Alternate Least Squares
+was used.}
+
+\acknowledgements{ Parents, Berkant Savas, Lars Elden, Niklas Ekvall, Opposition person.}
+%\useHyperRef
+
+\begin{document}
+
+\makeFrontMatter
+
+\include{introduction}
+\include{CollabFiltering}
+\include{TemporalDynamics}
+\include{MathematicalBackground}
+\include{ImplementationResults}
+\bibliographystyle{plain}
+\bibliography{bibl}
+
+\backmatter
+\appendix
+\include{appendix}
+
+
+\end{document}

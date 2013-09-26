@@ -1,0 +1,43 @@
+\chapter{Sparse SVD Computation}
+\label{app:SVDS}
+
+\subsubsection{SVDS} 
+\begin{left}
+\line(1,0){\textwidth}
+\end{left} \\
+This function in MATLAB computes the singular vectors and singular values of a given sparse matrix. \\
+
+
+\subsubsection{Syntax} 
+\begin{left}
+\line(1,0){\textwidth}
+\end{left} \\
+$[U,S,V]=svds(A,k),$ \\
+where U is the \emph{right singular vectors} $m \times k$ matrix having orthnormal columns, \\
+      V is the \emph{left singular vectors} $n \times k$ matrix having orthnormal columns, \\
+      S is the $k \times k$ diagonal matrix, where the diagonal elements are the singular values. \\
+      
+\subsubsection{Description}
+\begin{left}
+\line(1,0){\textwidth}
+\end{left} \\
+The MATLAB function svds uses Lanczos Tridiagonalization on the matrix,
+\[
+  B = \begin{pmatrix}
+   0          &   A            \\
+      A^T      & 0     \\
+
+ \end{pmatrix}
+\] \\
+
+\begin{algorithm}
+\caption{Lanczos tridiagonalization}
+\label{Alg_Lanczos}
+\begin{algorithmic}
+1. Initialization: Starting vector $v_1$, such that $||v_1||_2=1$, $\beta_{0}=0$ and $v_0=0$.
+\end{algorithmic}
+\end{algorithm}
+
+% Local Variables:
+% TeX-master: "main.tex"
+% End:

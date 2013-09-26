@@ -1,0 +1,289 @@
+\chapter{Mathematical Background\index{Mathematical Background}}
+
+\textsf{ In this chapter we provide the mathematical proofs which form the basis
+of the prediction models. The main concept of matrix factorization is explained
+mathematically. Singular value decomposition is explained in detail, and some
+issues regarding the disadvantages in the present scenario is explained. An
+substitute method Alternate Least Squares is explained. And lastly low rank
+approximation is explained.}
+
+\section{Introduction to Matrix Factorization}
+Since this chapter is dedicated to the mathematical principles that drives the
+prediction models, we can begin with a direct statement, the data matrix is
+factorized into simpler matrices which are constrained on its dimensionality.
+Different types of constraints can be imposed on the factorization, but for the
+particular machine learning task of collaborative filtering we have only used
+the low rank approximation. Collaborative filtering can be considered as
+\emph{matrix completion} problem, where we are trying to fill in the missing
+entries of the sparsely filled rating matrix $R$ $\in\mathbb{R}^{u,i}$. We
+complete the rating matrix by approximating it to a full matrix $\hat{R}=PQ'$,
+where $P \in\mathbb{R}^{u,k}$ and $Q \in\mathbb{R}^{i,k}$. 
+
+$P$ and $Q$ are unconstranied \emph{factor matrices} and we will show that if
+$\hat{R}$ is the best approximation of the original rating matrix, then the
+\emph{rank} of $\hat{R}$ is at most $k$. 
+
+Now that we have had a fair idea of how to approach the problem, the next
+important concern is to decide in what sense do we want to approximate the data
+matrix, or how do we measure the discrepency between the original matrix and the
+approximated matrix. The simplest way would be to measure the \emph{Frobenius
+distance} between the two,
+\[
+ \|{R-\hat{R}}\|_{F}^2 = \sum_{ui}^{}(R_{ui}-\hat{R}_{ui})^2
+\]
+But we use the Root Mean Squared Error(RMSE) to measure the accuracy. 
+
+There might also be a necessity in applicatons like clustering to impose a
+constraint on the factored matrices other than only on rank of approximating
+matrix. Since clustering is based on some kind of distance measure and distance
+can never be negative, it is obvious that we need to impose a non-negative
+constraint on the factored matrices. In such cases we cannot rely on SVD as it
+can generate negative elements. Instead we might want to compute the rank-$k$
+approximation in the following way \cite{eld-mm:07}, \\
+\[
+  A\approx WH,		W,H\geq0
+\] \\
+
+\section{Matrix approximation using SVD}
+\begin{theorem}[SVD]
+ Any $m \times n$ matrix A with rank k, with $m \geq n$, can be factorized \\
+\begin{equation}
+  A = U\begin{pmatrix}\Sigma\\0\end{pmatrix}V^{T},
+\end{equation}
+where $U \in \mathbb{R}^{m \times m}$ and $V \in \mathbb{R}^{n \times n}$, and
+$\Sigma \in \mathbb{R}^{m \times n}$ is a diagonal matrix, i.e., $\Sigma =
+diag(\sigma_1,\sigma_2,...\sigma_n)$, with $\sigma_1 \geq \sigma_2 \geq ... \geq
+\sigma_n \geq 0$. Here $\sigma_1,...,\sigma_n$ are called singular values of A.
+The column vectors of U and V are called the right and left singular vectors of
+A, respectivley.  
+\end{theorem}
+The matrix A can be constructed from the singular values as shown below, \\
+\begin{equation}
+ A=\sum_{i=1}^{n}\sigma_i u_i v_i^T
+\end{equation}
+The matrix $U$ can be written as $U=[U_1 U_2]$, where $U_1 \in \mathbb{R}^{m
+\times n}$. We can obtain the matrix $A$ by the \emph{outer} \emph{product}
+\emph{form} in a thin version as shown below,
+\[
+ A=U_1 \Sigma V^T = \begin{pmatrix}u_1&u_2&\cdots&u_n\end{pmatrix}
+  \begin{pmatrix}
+  \sigma_1 &         &        &        \\
+           & \sigma_2&        &        \\
+           &         & \ddots &        \\
+           &         &        & \sigma_n
+ \end{pmatrix}
+ \begin{pmatrix}v_1^T\\v_2^T\\\vdots\\v_n^T\end{pmatrix}\\
+\] \\
+Now moving ahead with matrix approximation, let us consider our original matrix
+$A$, as sum of a low-rank matrix and a small noise, $A_0 + N$. Since it is an
+approximation problem we will try to minimise the noise $N$, by estimating the
+\emph{correct rank} of $A_0$, this rank is known as \emph{numerical rank}.
+\cite{eld-mm:07}. Now the approximation looks like this, \\
+\[
+ A = \sum_{i=1}^{n}\sigma_i u_i v_i^T \approx \sum_{i=1}^{k}\sigma_k u_k v_k^T
+\]\\
+\begin{theorem}[Eckart-Young theorem]
+ For a matrix A $\in \mathbb{R}^{m \times n}$, with $rank(A)=r>k$. The Frobenius
+norm of the matrix approximation problem \\
+\begin{equation}
+ \min_{rank(\hat{A})=k}\|{A-\hat{A}}\|
+\end{equation}\\
+which has the solution of 
+\begin{equation}
+ \hat{A}=U_k \Sigma_{k} V_k^T,
+\end{equation}\\
+where $U_k = \begin{pmatrix}u_1&u_2&\cdots&u_k\end{pmatrix}$, $V_k=
+\begin{pmatrix}v_1^T\\v_2^T\\\vdots\\v_n^T\end{pmatrix}$ and
+$\Sigma_k=diag(\sigma_1,\sigma_2,...,\sigma_k)$. Equation 4.3 has the minimum
+solution of
+\begin{equation}
+ \|{A-\hat{A}}\|_{F}=\left(\sum_{i=k+1}^{p}\sigma_i^2\right)^{1/2},
+\end{equation}
+where $p=min(m,n)$.
+\end{theorem}
+
+\section{Matrix approximation using Alternating Least Squares}
+\subsection{Disadvantage of SVD}
+In this thesis work we have done the implementation using MATLAB, and we use the
+function $[U,S,V]=svds(A,k)$ to obtain the singular value decomposition of a
+sparse matrix $A$ of rank $k$. However elegant is the method of $SVD$, it
+unfortunately fails to produce good predictions. The $SVD$ approximates a rating
+matrix by minimizing the \emph{Frobenius norm} of $|R-\hat{R}|$. This is
+equvivalent to minimizing the RMSE between individual elements in the rating
+matrix. Since the majority of the elements are \emph{unknowns}, and it is our
+belief that MATLAB while calulating \emph{SVD} considers these \emph{unknowns}
+as zeros, whereas these are not zeros and hence this approach is flawed.
+In the Appendix A, we give a detailed explanation as to why SVD is not
+appropriate to find the low-rank matrix approximation in our case, where our
+data matrix is very sparse($1\%$-dense). 
+
+\subsection{Problem formulation w.r.t ALS}
+
+This approach is based on the article \cite{Zhou:2008:LPC:1424237.1424269}.
+Let $U=[\bold{u_i}]$ be the user feature matrix where $\bold{u_i} \subseteq
+\mathbb{R}^{n_f}$ and $i=1,2,...,n_u$, and let $M=\bold{m_j}$ be the item or
+movie feature matrix, where $\bold{m_j} \subseteq
+\mathbb{R}^{n_f}$ and $j=1,2,...,n_m$. Here $n_f$ is the number of factors,
+i.e., the reduced dimension or the lower rank, which is determined by cross
+validation. The predictions can be calculated for any user-movie combination
+$(i,j)$, as $r_{ij}=\bold{u_i} \cdotp \bold{m_j}, \forall i,j$. Here we minimize
+the loss function of $U$ and $M$ as the condition in the iterative process of
+obtaining these matrices. Let us start by considering the loss due to a single
+prediction in terms of sqaured error: 
+\begin{equation}
+ \mathcal{L}^2(r,\bold{u},\bold{m})=(r-<\bold{u},\bold{m}>)^2.
+\end{equation}
+
+Based on the above equation generalizing it for the whole data set, the
+\emph{empirical} total loss as:
+\begin{equation}
+ \mathcal{L}^{emp}(R,U,M)=\frac{1}{n} \sum_{(i,j) \in
+I}\mathcal{L}^2(r_{ij},\bold{u_i},\bold{m_j}),
+\end{equation}
+where $I$ is the known ratings dataset having $n$ ratings. 
+
+Based on the above, we can formulate our low rank matrix approximation problem
+as 
+\begin{equation}
+(U,M)=arg \min_{(U,M)}\mathcal{L}^{emp}(R,U,M).
+\end{equation}
+
+Here the number of elements or free parameters we need to determine is $(n_u +
+n_m)n_f$, but in our initial known data matrix, .i.e, $R$ we only have $1\%$ of
+$n_un_m$ elements. While solving Eq. (4.8) with a sparse $R$ matrix leads to
+overfitting. To avoid this we use Tikhonov regularization, our emperical loss
+term get another term as shown below:
+\begin{equation}
+ \mathcal{L}_{\lambda}^{reg}=\mathcal{L}^{emp}(R,U,
+M)+\lambda(\|U\Gamma_U\|^2+\|M\Gamma_M\|^2),
+\end{equation}
+where $\Gamma_U$ and $\Gamma_M$ are Tikhonov matrices. In the next section we
+will discuss in detail about how to form these Tikhonov matrices.
+\subsection{Regularized ALS}
+
+According to the article \cite{Zhou:2008:LPC:1424237.1424269}, it is best to use
+weighted-$\lambda$-regularization, which is as shown below:
+\begin{equation}
+ f(U,M)= \sum_{(i,j) \in I}(r_{ij}-\bold{u}_i^T\bold{m}_j)^2+\lambda(\sum_i
+n_{u_{i}}\|\bold{u}_i\|^2+\sum_j n_{m_{j}}\|\bold{m}_j\|^2),
+\end{equation}
+The above equation can is somewhat an vectorized version of Eq. (4.9), where the
+Tikhonov matrices are replaced by $n_{u_{i}}$ and $n_{m_{j}}$, which are nothing
+but the number of ratings of user $i$ and movie $j$. Below equations show how
+these terms are related to Tikhonov matrices:
+$$\Gamma_U=diag(n_{u_{i}})		\Gamma_M=diag(n_{m_{j}})$$
+Now we will discuss how to solve for matrices $U$ and $M$, this is the
+mathematical explanation of what was explained under Temporal Bias + ALS model
+in Sec. (2.3.3). The matrix $U$ is approximated column wise, i.e., $u_i$, is
+determined by solving the regularized least squares problem, using the known
+ratings vector of user $i$ and the feature vectors $m_j$, which are the columns
+of $M$ matrix corresponding to the movies seen by the user $i$. Let us
+represent 
+Eq. (4.10), is a simple differential equation style as follows:
+\begin{equation}
+ f(u,m)=(r-um)^2+\lambda(nu^2+nm^2)
+\end{equation}
+to minimize this function we equate the first partial differential w.r.t $u$ of
+the function $f$ to $0$.
+\begin{align}
+& \frac{1}{2} \frac{\partial f}{\partial u_{ki}} = 0, & \forall i,k \\
+ \implies & \sum_{j\in I_i}(\bold{u}_i^T\bold{m}_j-r_{ij})m_{kj}+\lambds
+n_{u_{i}}u_{ki}=0, & \forall i,k \\
+ \implies & \sum_{j\in I_i}m_kj\bold{m}_j^T\bold{u}_i
++\lambda n_{u_{i}}u_ki = \sum_{j\in I_i}m_{kj}r_{ij}, & \forall i,k \\
+\implies & (M_{I_{i}}M_{I_{i}^T}+\lambda
+n_{u_{i}}E)\bold{u}_i=M_{I_{i}}R^T(i,I_i), & \forall i,k \\
+\implies & \bold{u}_i = A_{i}^{-1}V_i, & \forall i \\
+  \end{align}
+
+where $E$ is $n_f \times n_f$ identity matrix, $V_i=M_{I_{i}}R^T(i,I_i)$ and
+$A_i=M_{I_{i}}M_{I_{i}}^T+\lambda n_{u_{i}}E.$ 
+
+Now in the same way by starting with a known $U$ matrix, the movie feature
+matrix $M$ is approximated by computing the individual column vectors of $M$ as
+shown below: \\
+\begin{align*}
+ & \bold{m}_j=A_{j}^{-1}V_j, & \forall j,
+\end{align*}
+where $A_j=U_{I_{i}}U_{I_{i}}^T+\lambda n_{m_{j}}E$ and $V_j=U_{I_{i}}R(I_j,j)$.
+$U_{I_{i}}$ is the sub-matrix of $U$, where only $i \in I_j$ are selected.
+$R(I_j,j)$ is the column vector which is obtained from the rating matrix $R$, by
+selecting all the elements from column $j$ and rows corresponding to $i \in I_j$
+
+\section{Evaluation Metrics}
+With the advent of the NETFLIX Competition, \emph{accuracy} has become one of
+the most important defining properties of Recommender systems. Hence it is
+worthwhile to discuss about different methods of measuring accuracy. The choice
+of metrics for accuracy might depend on the kind of systems under study, like if
+it is \emph{rating prediction system} or \emph{decision support system}. For the
+former we can use statistical accuracy measures where we compare the predicted
+value with known actual values, for example the \emph{MAE(Mean Absolute Error)},
+\emph{RMSE}, \emph{Correlation} etc. In the case of decision support systems,
+where it is required to produce a list of high-relevance items, like in the
+\emph{top-N} recommendation systems, the metrics used to measure accuracy are
+\emph{precision}, \emph{recall}, or \emph{F-measure} etc. 
+
+\subsection{Mean Average Error}
+Let us consider, $\mathcal{T} = \{r_{ij} \exists \mbox{ in } Q_{\text{test}}
+\mid \mbox{user } i
+\in \mathcal{U} \mbox{ have rated movie } j \in \mathcal{M} \}$, to be the test
+set. Then the MAE can be defined as,
+\begin{equation}
+ MAE = \sum_{r_{i,j}\in{\mathcal{T}}}\frac{|\hat{r}_{ij}-r_{ij}|}{|T|}
+\end{equation}
+where $\hat{r}_{ij}$ is the predicted rating and $r_{ij}$ is the actual rating,
+and $|T|$ is the size of the test set. The goal is to minimize this value to get
+better accuracy.
+
+\subsection{RMSE}
+For the same test set as shown above, the RMSE is defined as, 
+\begin{equation}
+  RMSE =\left(
+\frac{\sum_{r_{i,j}\in{\mathcal{T}}}{(\hat{r}_{ij}-r_{ij})^2}}{|T|}\right)^{1/2}
+\end{equation}
+
+\subsection{Correlation}
+If we consider the predicted and the known values to be vectors, then the
+correlation gives the proximity of the two vectors. \emph{Pearson Correlation
+Coefficient} is an example, which is defined by
+\begin{equation}
+ \rho_{\hat{r},r}=\frac{cov(\hat{r},r)}{\sigma_{\hat{r}}\sigma_r}
+\end{equation}
+Higher the value better the accuracy in this case. Geometrically this can be
+viewed as the \emph{cosine} of the angle between the two vectors. 
+
+\subsection{Precision and Recall}
+In the general \emph{Information retireval} point of view, the precision is
+defined as,
+\begin{equation}
+ P=\frac{D_r}{D_t}
+\end{equation}
+where $D_r$ is the number of relevant documents retrieved and $D_t$ is the total
+number of documents retrieved \cite{eld-mm:07}. But in the
+Recommender system point of view the documents are replaced by items, and the
+user interest according to the user profile is used instead of the explicit
+query. 
+
+Recall is defined as,
+\begin{equation}
+ R=\frac{D_r}{N_r}
+\end{equation}
+where $N_r$ is the total number of relevant documents in the database, which in
+the case of recommender systems would be the total number of items in the whole
+data.
+
+\subsection{F-Measure}
+This is a way to combine the precision and recall into one metric, a simple F-1
+measure is the harmonic mean of precision and recall. 
+
+
+
+
+
+
+
+
+
+
+
+

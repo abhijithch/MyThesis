@@ -1,0 +1,54 @@
+\select@language {swedish}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Collaborative Filtering}{3}
+\contentsline {section}{\numberline {2.1}Recommender Systems}{3}
+\contentsline {section}{\numberline {2.2}NETFLIX}{4}
+\contentsline {subsection}{\numberline {2.2.1}NETFLIX Prize}{5}
+\contentsline {subsection}{\numberline {2.2.2}The NETFLIX dataset}{6}
+\contentsline {section}{\numberline {2.3}Matrix Factorization for Collaborative Filtering}{7}
+\contentsline {subsection}{\numberline {2.3.1}Basic Matrix Factorization}{7}
+\contentsline {subsection}{\numberline {2.3.2}Dimension Reduction}{8}
+\contentsline {subsection}{\numberline {2.3.3}Different Models}{9}
+\contentsline {subsubsection}{Data Representation}{9}
+\contentsline {subsubsection}{Basic Naive model}{10}
+\contentsline {subsubsection}{Bias model}{10}
+\contentsline {subsubsection}{Temporal Bias + SVD model}{10}
+\contentsline {subsubsection}{Temporal Bias + ALS model}{11}
+\contentsline {chapter}{\numberline {3}Temporal Dynamics}{13}
+\contentsline {section}{\numberline {3.1}Temporal Dynamics in NETFLIX data}{13}
+\contentsline {section}{\numberline {3.2}Tracking Drifting Customer Preferences}{13}
+\contentsline {section}{\numberline {3.3}Temporal Dynamics in NETFLIX Data}{14}
+\contentsline {section}{\numberline {3.4}Temporal-Factor Model}{14}
+\contentsline {chapter}{\numberline {4}Mathematical Background}{19}
+\contentsline {section}{\numberline {4.1}Introduction to Matrix Factorization}{19}
+\contentsline {section}{\numberline {4.2}Matrix approximation using SVD}{20}
+\contentsline {section}{\numberline {4.3}Matrix approximation using Alternating Least Squares}{21}
+\contentsline {subsection}{\numberline {4.3.1}Disadvantage of SVD}{21}
+\contentsline {subsection}{\numberline {4.3.2}Problem formulation w.r.t ALS}{21}
+\contentsline {subsection}{\numberline {4.3.3}Regularized ALS}{22}
+\contentsline {section}{\numberline {4.4}Evaluation Metrics}{23}
+\contentsline {subsection}{\numberline {4.4.1}Mean Average Error}{24}
+\contentsline {subsection}{\numberline {4.4.2}RMSE}{24}
+\contentsline {subsection}{\numberline {4.4.3}Correlation}{24}
+\contentsline {subsection}{\numberline {4.4.4}Precision and Recall}{24}
+\contentsline {subsection}{\numberline {4.4.5}F-Measure}{25}
+\contentsline {chapter}{\numberline {5}Results}{27}
+\contentsline {section}{\numberline {5.1}Overview of Different Models}{27}
+\contentsline {subsubsection}{SVD}{27}
+\contentsline {subsubsection}{ALS-I}{28}
+\contentsline {subsubsection}{ALS-II}{28}
+\contentsline {subsubsection}{$NonTemp_{mu}$}{29}
+\contentsline {subsubsection}{$Temp_{mu}$}{29}
+\contentsline {subsubsection}{$NonTemp_b$}{29}
+\contentsline {subsubsection}{$Temp_b$}{29}
+\contentsline {section}{\numberline {5.2}Results}{29}
+\contentsline {section}{\numberline {5.3}Future Work}{30}
+\contentsline {chapter}{Bibliography}{35}
+\contentsline {chapter}{\numberline {A}Sparse SVD Computation}{37}
+\contentsline {subsubsection}{SVDS}{37}
+\contentsline {subsubsection}{Syntax}{37}
+\contentsline {subsubsection}{Description}{37}

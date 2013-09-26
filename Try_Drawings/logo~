@@ -1,0 +1,13 @@
+\documentclass[a5paper]{article}
+
+\usepackage{anyfontsize}
+\usepackage[usenames]{xcolor}
+
+\begin{document}
+\begin{center}
+\fontsize{123}{128}\selectfont \textcolor{orange}{1729}
+\end{center}
+
+
+
+\end{document}

@@ -1,0 +1,21 @@
+\chapter{Mathematical Background\index{Mathematical Background}}
+
+\textsf{ In this chapter we provide the mathematical proofs which form the basis
+of the prediction models. The main concept of matrix factorization is explained
+mathematically. Singular value decomposition is explained in detail, and some
+issues regarding the disadvantages in the present scenario is explained. An
+substitute method Alternate Least Squares is explained. And lastly low rank
+approximation is explained.}
+
+\section{Matrix Factorization Technique}
+Since this chapter is dedicated to the mathematical principles that drives the
+prediction models, we can begin with a direct statement, the data matrix is
+factorized into simpler matrices which are constrained on its dimensionality.
+Different types of constraints can be imposed on the factorization, but for the
+particular machine learning task of collaborative filtering we have only used
+the low rank approximation. Collaborative filtering can be considered as
+\emph{matrix completion} problem, where we are trying to fill in the missing
+entries of the sparsely filled rating matrix $R$ $\in\mathbb{R}^{u,i}$. We
+complete the rating matrix by approximating it to a full matrix $\hat{R}=PQ'$,
+where $P \in\mathbb{R}^{u,k}$ and $Q \in\mathbb{R}^{i,k}$. \\
+$P$ and $Q$ are unconstranied $factor matrices$ and we will show that if $\hat{R}$ is the best approximation of the original rating matrix, then the $rank$ of $\hat{R}$ is $k$.

@@ -1,0 +1,86 @@
+\begin{thebibliography}{10}
+
+\bibitem{NETFLIX_Prize:Online}
+Netflix prize leaderboard, http://www.netflixprize.com//leaderboard.
+
+\bibitem{Bennett07thenetflix}
+James Bennett, Stan Lanning, and Netflix Netflix.
+\newblock The netflix prize.
+\newblock In {\em In KDD Cup and Workshop in conjunction with KDD}, 2007.
+
+\bibitem{Ding:2005:TWC:1099554.1099689}
+Yi~Ding and Xue Li.
+\newblock Time weight collaborative filtering.
+\newblock In {\em Proceedings of the 14th ACM international conference on
+  Information and knowledge management}, CIKM '05, pages 485--492, New York,
+  NY, USA, 2005. ACM.
+
+\bibitem{eld-mm:07}
+Lars Eld\'en.
+\newblock {\em Matrix Methods in Data Mining and Pattern Recognition}.
+\newblock Society for Industrial and Applied Mathematics, Philadelphia, PA,
+  USA, 2007.
+
+\bibitem{Fayyad96fromdata}
+Usama Fayyad, Gregory Piatetsky-shapiro, and Padhraic Smyth.
+\newblock From data mining to knowledge discovery in databases.
+\newblock {\em AI Magazine}, 17:37--54, 1996.
+
+\bibitem{citeulike:4563139}
+Simon Funk.
+\newblock {Netflix Update: Try this at Home}.
+\newblock 2006.
+
+\bibitem{Goldberg:1992:UCF:138859.138867}
+David Goldberg, David Nichols, Brian~M. Oki, and Douglas Terry.
+\newblock Using collaborative filtering to weave an information tapestry.
+\newblock {\em Commun. ACM}, 35(12):61--70, December 1992.
+
+\bibitem{Koren:2008:FMN:1401890.1401944}
+Yehuda Koren.
+\newblock Factorization meets the neighborhood: a multifaceted collaborative
+  filtering model.
+\newblock In {\em Proceedings of the 14th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, KDD '08, pages 426--434, New York,
+  NY, USA, 2008. ACM.
+
+\bibitem{Koren:2010:CFT:1721654.1721677}
+Yehuda Koren.
+\newblock Collaborative filtering with temporal dynamics.
+\newblock {\em Commun. ACM}, 53(4):89--97, April 2010.
+
+\bibitem{citeulike:8923836}
+Yehuda Koren and Robert Bell.
+\newblock {Advances in Collaborative Filtering}.
+\newblock In Francesco Ricci, Lior Rokach, Bracha Shapira, and Paul~B. Kantor,
+  editors, {\em Recommender Systems Handbook}, chapter~5, pages 145--186.
+  Springer US, Boston, MA, 2011.
+
+\bibitem{Koren:2009:MFT:1608565.1608614}
+Yehuda Koren, Robert Bell, and Chris Volinsky.
+\newblock Matrix factorization techniques for recommender systems.
+\newblock {\em Computer}, 42(8):30--37, August 2009.
+
+\bibitem{Liu:2010:GLA:1821715.1821722}
+Jun Liu, Songcan Chen, Zhi-Hua Zhou, and Xiaoyang Tan.
+\newblock Generalized low-rank approximations of matrices revisited.
+\newblock {\em Trans. Neur. Netw.}, 21(4):621--632, April 2010.
+
+\bibitem{Paterek_RegSVD}
+Arkadiusz Paterek.
+\newblock Improving regularized singular value decomposition for collaborative
+  filtering.
+
+\bibitem{Resnick:1997:RS:245108.245121}
+Paul Resnick and Hal~R. Varian.
+\newblock Recommender systems.
+\newblock {\em Commun. ACM}, 40(3):56--58, mar 1997.
+
+\bibitem{Zhou:2008:LPC:1424237.1424269}
+Yunhong Zhou, Dennis Wilkinson, Robert Schreiber, and Rong Pan.
+\newblock Large-scale parallel collaborative filtering for the netflix prize.
+\newblock In {\em Proceedings of the 4th international conference on
+  Algorithmic Aspects in Information and Management}, AAIM '08, pages 337--348,
+  Berlin, Heidelberg, 2008. Springer-Verlag.
+
+\end{thebibliography}

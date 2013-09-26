@@ -1,0 +1,54 @@
+\chapter{Introduction\index{Introduction}}
+
+
+\textsf{%
+In this chapter we introduce the field of Datamining and its relevance. We
+also introduce the area of research in which this thesis work is done.}
+
+\section{Introduction\index{Introduction}}
+The field of Data Mining aka Knowledge Discovery in Data, or KDD saw its first
+light during the 1990s, and has evolved along with the processing power and
+storage capacities of modern computer systems. The amount of data only from the
+web is in the order of exabytes and continues to increase, this along with other
+sources of data resulting from reserach and experimentation proves to be one the
+most important sources of knowledge. The data mining techniques are applied
+to wide variety of applications like in business, to improve customer
+relationhip management, or to do market analysis with respect to a particular
+product. The medical fraternity use them to do temporal analysis of patterns
+concerning drug presciptions to diagnoses. With respect to science and
+engineering, DNA sequence mining proves very crucial in understanding the
+variations in human DNA. Data mining actually can be seen as one step towards
+discovering knowledge from raw source, initially there are many more processes
+like understanding of the application domain and collecting the data, then there
+is data transformation and only then is the actual data mining techniques
+applied. Even after the data is mined and clusters or patterns are obtained,
+interpretation of these patterns and taking required actions forms the last
+stage. There are six main tasks within the gamut of data mining, enlisted
+below, \cite{Fayyad96fromdata}
+\begin{description}
+  \item[Classification] is learning a function that maps a data item into one of
+several predefined classes.
+  \item[Regression] is learning a function that maps a data item to a
+real-valued prediction variable.
+  \item[Clustering] is a common descriptive task where one seeks to identify a
+finite set of categories or clusters to describe the data.
+  \item[Summarization] involves methods for finding a compact description for a
+subset of data.
+  \item[Dependency Modeling] consists of finding a model that describes
+significant dependencies between variables.
+\item[Change and deviation detection] focuses on discovering the most
+significant changes in
+the data from previously measured or normative values.
+\end{description}
+
+  The kind of prediction we are dealing with is ratings prediction, which gives
+an indication of user's preference to items. Depending on the predicted rating
+recommendations are made, this involves different tasks the most significant of
+them being matrix factorization and rank reduction. It is very common while
+dealing with preferences that they tend to change with time, the work by
+\cite{Koren:2010:CFT:1721654.1721677} models the data drifting with time. It is
+important to note that while modeling temporal effects we should take into
+account there are transient signals analogous to users and a more long term
+patterns characterized by movies.
+
+

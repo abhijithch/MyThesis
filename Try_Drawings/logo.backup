@@ -1,0 +1,13 @@
+\documentclass{memoir}
+
+
+
+
+\begin{document}
+\begin{center}
+{\HUGE 1729} 
+\end{center}
+
+
+
+\end{document}
