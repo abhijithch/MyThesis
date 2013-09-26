@@ -1,7 +1,22 @@
 \begin{thebibliography}{10}
 
+\bibitem{BarackObama}
+How obama's data crunchers helped him win,
+  http://edition.cnn.com/2012/11/07/tech/web/obama-campaign-tech-team/index.ht%
+ml.
+
 \bibitem{NETFLIX_Prize:Online}
 Netflix prize leaderboard, http://www.netflixprize.com//leaderboard.
+
+\bibitem{IBM_BigData:online}
+What is big data, ibm, http://www.ibm.com/big-data/us/en/.
+
+\bibitem{UppsalaMonitoring}
+I.~R. Edwards S. Olsson R. Orre A. Lansner R. M. De~Freitas A.~Bate,
+  M.~Lindquist.
+\newblock A bayesian neural network method for adverse drug reaction signal
+  generation.
+\newblock {\em European Journal of Clinical Pharmacology}, 54(4).
 
 \bibitem{Bennett07thenetflix}
 James Bennett, Stan Lanning, and Netflix Netflix.
@@ -70,6 +85,12 @@ Jun Liu, Songcan Chen, Zhi-Hua Zhou, and Xiaoyang Tan.
 Arkadiusz Paterek.
 \newblock Improving regularized singular value decomposition for collaborative
   filtering.
+
+\bibitem{IBM-BigData}
+Dirk deRoos Thomas Deutsch George~Lapis Paul~C.Zikopoulos, Chris~Eaton.
+\newblock {\em Understanding Big Data: Analytics for Enterprise Class Hadoop
+  and Streaming Data}.
+\newblock McGraw Hill.
 
 \bibitem{Resnick:1997:RS:245108.245121}
 Paul Resnick and Hal~R. Varian.

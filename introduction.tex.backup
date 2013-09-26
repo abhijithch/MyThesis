@@ -8,23 +8,29 @@ also introduce the area of research in which this thesis work is done.}
 \section{Introduction\index{Introduction}}
 The field of Data Mining aka Knowledge Discovery in Data, or KDD saw its first
 light during the 1990s, and has evolved along with the processing power and
-storage capacities of modern computer systems. The amount of data only from the
-web is in the order of exabytes and continues to increase, this along with other
-sources of data resulting from reserach and experimentation proves to be one the
-most important sources of knowledge. The data mining techniques are applied
-to wide variety of applications like in business, to improve customer
-relationhip management, or to do market analysis with respect to a particular
-product. The medical fraternity use them to do temporal analysis of patterns
-concerning drug presciptions to diagnoses. With respect to science and
-engineering, DNA sequence mining proves very crucial in understanding the
-variations in human DNA. Data mining actually can be seen as one step towards
-discovering knowledge from raw source, initially there are many more processes
-like understanding of the application domain and collecting the data, then there
-is data transformation and only then is the actual data mining techniques
-applied. Even after the data is mined and clusters or patterns are obtained,
-interpretation of these patterns and taking required actions forms the last
-stage. There are six main tasks within the gamut of data mining, enlisted
-below, \ref{}
+storage capacities of modern computer systems. According to IBM, data is being
+ubiquitously generated at a rate of 2.5 billion gigabytes each day
+\cite{IBM_BigData:online}. The amount of data is exploding with as estimate of
+35 zetabytes by the year 2020, which seems realistic with just social ineraction
+websites like twitter contributing around 7 terabytes(TB) each day and facebook
+generating around 10 terabytes \cite{IBM-BigData}. The analytics possibilities
+with this vast amounts of data is again as diverse as the sources of data, in
+the political arena, Big data technology played an important factor for Barack
+Obama's 2012 presidential campaign, where information from previous election
+were used \cite{BarackObama}. Researchers from Uppsala Monitoring Centre have
+been able to create a comprehensive database of Adverse Drug Reactions(ADRs)
+using advanced data mining techniques \cite{UppsalaMonitoring}. In the business
+front, enables new business intelligence dimension, NETFLIX is using its user
+ratings information to provide better predictions and thereby helping its
+customers make choices. 
+
+We intend to obtain/infer useful knowledge from raw data, by observing
+underlying patterns which characterizes the system represented by the raw data.
+In this huge process data mining forms the part which requires a mathematical
+approach. This stage is preceded by certain engineering stages like creation and
+preparation of data. It is succeeded by certain business or domain specific
+knowledge inference analysis stages. There are six main tasks within the gamut
+of data mining, enlisted below, \cite{Fayyad96fromdata}
 \begin{description}
   \item[Classification] is learning a function that maps a data item into one of
 several predefined classes.
@@ -41,12 +47,19 @@ significant changes in
 the data from previously measured or normative values.
 \end{description}
 
+From a mathematical perspective data mining or pattern recognition can be viewed
+as a data model fitting problem. The preprocessed data what we use to build a
+model upon is called as the $training data$. This training data is prepared from
+the factual previous knowledge. Next after building a model, we would like to
+ensure its validity. There needs to be some kind of measurement to have a
+certain desirable degree of correctness of the model. This forms the $error analysis$, and metrics like $RMSE$ are used often.
+
   The kind of prediction we are dealing with is ratings prediction, which gives
 an indication of user's preference to items. Depending on the predicted rating
 recommendations are made, this involves different tasks the most significant of
 them being matrix factorization and rank reduction. It is very common while
 dealing with preferences that they tend to change with time, the work by
-\refname{Koren, Temporal Dynamics} models the data drifting with time. It is
+\cite{Koren:2010:CFT:1721654.1721677} models the data drifting with time. It is
 important to note that while modeling temporal effects we should take into
 account there are transient signals analogous to users and a more long term
 patterns characterized by movies.

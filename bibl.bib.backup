@@ -7,6 +7,27 @@
     year = {2007}
 }
 
+
+
+@inproceedings{Ding:2005:TWC:1099554.1099689,
+ author = {Ding, Yi and Li, Xue},
+ title = {Time weight collaborative filtering},
+ booktitle = {Proceedings of the 14th ACM international conference on Information and knowledge management},
+ series = {CIKM '05},
+ year = {2005},
+ isbn = {1-59593-140-6},
+ location = {Bremen, Germany},
+ pages = {485--492},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/1099554.1099689},
+ doi = {10.1145/1099554.1099689},
+ acmid = {1099689},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {collaborative filtering, item-based approach, time weight},
+} 
+
+
 @article{Koren:2010:CFT:1721654.1721677,
  author = {Koren, Yehuda},
  title = {Collaborative filtering with temporal dynamics},
@@ -88,12 +109,6 @@ collaborative filtering
 }
 
 
-@MISC{Savas_clusteredlow,
-    author = {Berkant Savas and Inderjit S. Dhillon},
-    title = {Clustered low rank approximation of graphs in information science applications},
-    year = {}
-}
-
 @inproceedings{Hu:2008:CFI:1510528.1511352,
  author = {Hu, Yifan and Koren, Yehuda and Volinsky, Chris},
  title = {Collaborative Filtering for Implicit Feedback Datasets},
@@ -131,6 +146,27 @@ collaborative filtering
     url = {http://serv1.ist.psu.edu:8080/viewdoc/summary;jsessionid=CBC0A80E61E800DE518520F9469B2FD1?doi=10.1.1.96.7652},
     year = {2007}
 }
+
+
+
+@inproceedings{Koren:2008:FMN:1401890.1401944,
+ author = {Koren, Yehuda},
+ title = {Factorization meets the neighborhood: a multifaceted collaborative filtering model},
+ booktitle = {Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining},
+ series = {KDD '08},
+ year = {2008},
+ isbn = {978-1-60558-193-4},
+ location = {Las Vegas, Nevada, USA},
+ pages = {426--434},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/1401890.1401944},
+ doi = {10.1145/1401890.1401944},
+ acmid = {1401944},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {collaborative filtering, recommender systems},
+} 
+
 
 @ARTICLE{Berry95usinglinear,
     author = {M. W. Berry and S.T. Dumais and G.W. O'Brien and Michael W. Berry and Susan T. Dumais and Gavin},
@@ -225,4 +261,35 @@ year={2012}
 title = {NETFLIX Prize Leaderboard, http://www.netflixprize.com//leaderboard},
 
 url = {http://www.netflixprize.com//leaderboard}
+}
+
+@ONLINE{IBM-BigData,
+
+title = {What is Big Data, IBM, http://www.ibm.com/big-data/us/en/},
+
+url = {http://www.ibm.com/big-data/us/en/}
+}
+
+@incollection{citeulike:8923836,
+    abstract = {{The collaborative filtering (CF) approach to recommenders has recently enjoyed much interest and progress. The fact that it played a central role within the recently completed Netflix competition has contributed to its popularity. This chapter surveys the recent progress in the field. Matrix factorization techniques, which became a first choice for implementing CF, are described together with recent innovations. We also describe several extensions that bring competitive accuracy into neighborhood methods, which used to dominate the field. The chapter demonstrates how to utilize temporal models and implicit feedback to extend models accuracy. In passing, we include detailed descriptions of some the central methods developed for tackling the challenge of the Netflix Prize competition.}},
+    address = {Boston, MA},
+    author = {Koren, Yehuda and Bell, Robert},
+    booktitle = {Recommender Systems Handbook},
+    chapter = {5},
+    citeulike-article-id = {8923836},
+    citeulike-linkout-0 = {http://dblp.uni-trier.de/rec/bibtex/reference/rsh/KorenB11},
+    citeulike-linkout-1 = {http://dx.doi.org/10.1007/978-0-387-85820-3\_5},
+    citeulike-linkout-2 = {http://www.springerlink.com/content/x78806445324k172},
+    citeulike-linkout-3 = {http://link.springer.com/chapter/10.1007/978-0-387-85820-3\_5},
+    doi = {10.1007/978-0-387-85820-3\_5},
+    editor = {Ricci, Francesco and Rokach, Lior and Shapira, Bracha and Kantor, Paul B.},
+    isbn = {978-0-387-85819-7},
+    keywords = {book, collaborative-filtering, survey, svd, time-aware},
+    pages = {145--186},
+    posted-at = {2012-05-23 08:02:19},
+    priority = {0},
+    publisher = {Springer US},
+    title = {{Advances in Collaborative Filtering}},
+    url = {http://dx.doi.org/10.1007/978-0-387-85820-3\_5},
+    year = {2011}
 }
