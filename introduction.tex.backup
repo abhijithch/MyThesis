@@ -26,11 +26,12 @@ customers make choices.
 
 We intend to obtain/infer useful knowledge from raw data, by observing
 underlying patterns which characterizes the system represented by the raw data.
-In this huge process data mining forms the part which requires a mathematical
-approach. This stage is preceded by certain engineering stages like creation and
-preparation of data. It is succeeded by certain business or domain specific
-knowledge inference analysis stages. There are six main tasks within the gamut
-of data mining, enlisted below, \cite{Fayyad96fromdata}
+In this complex process of infering knowledge from raw data, data mining forms
+the part which requires a mathematical approach. The data mining stage is
+preceded by certain engineering stages like creation and preparation of data. It
+is succeeded by certain business or domain specific knowledge inference and
+analysis stages. There are six main tasks within the gamut of data mining,
+enlisted below, \cite{Fayyad96fromdata}
 \begin{description}
   \item[Classification] is learning a function that maps a data item into one of
 several predefined classes.
@@ -48,13 +49,20 @@ the data from previously measured or normative values.
 \end{description}
 
 From a mathematical perspective data mining or pattern recognition can be viewed
-as a data model fitting problem. The preprocessed data what we use to build a
-model upon is called as the $training data$. This training data is prepared from
-the factual previous knowledge. Next after building a model, we would like to
-ensure its validity. There needs to be some kind of measurement to have a
-certain desirable degree of correctness of the model. This forms the $error analysis$, and metrics like $RMSE$ are used often.
+as a data model fitting problem. The processed data what we use to build a
+model upon is called as the \emph{training data}. This training data is prepared
+from the factual previous knowledge. Next after building a model, we would like
+to ensure its validity. There needs to be some kind of measurement to esnure
+certain desirable degree of correctness of the model. This forms the \emph{error
+analysis}, and metrics like \emph{RMSE} are used often. Linear algebra proves to
+be pivotal in data mining, \cite{eld-mm:07} to build these models. 
 
-  The kind of prediction we are dealing with is ratings prediction, which gives
+In this master thesis work, our goal is to build a recommender system, which
+will help people choose movies they would like to watch. For building the same,
+we need some previous knowledge, an idea or some methodology on how to model
+this data, and some measure for degree of accuracy of the model.  
+
+The kind of prediction we are dealing with is ratings prediction, which gives
 an indication of user's preference to items. Depending on the predicted rating
 recommendations are made, this involves different tasks the most significant of
 them being matrix factorization and rank reduction. It is very common while

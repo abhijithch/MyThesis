@@ -7,6 +7,37 @@ issues regarding the disadvantages in the present scenario is explained. An
 substitute method Alternate Least Squares is explained. And lastly low rank
 approximation is explained.}
 
+\section{Least Squares and Orthogonality}
+\subsection{Linear Systems}
+The nature of the problem and the data we are dealing with is linear in nature,
+and hence we should start by looking into the basic principles involved in
+solutions of linear systems. Almost all the complex linear problems when broken
+down to the most granular level, can be viewed as,
+\begin{equation}
+  Ax=b,
+\end{equation}
+where $A\in\mathbb{R}^{m x n}$, $x\in \mathbb{R}^n$ and $b\in \mathbb{R}^m$. It
+is applied to deal with real life problems, by considering $x$ to be vector of
+causes and $b$ to be the vector of effects of a system which is characterized by
+matrix $A$. So when we know the causal vector $x$ we can find the effect $b$, by
+$b=Ax$. Or in most data modeling problems, we know the effects(from the
+\emph{training data}), $b$, we need to find the causal vector $x$. 
+
+If $m=n$, $A$ happens to be square and it is
+expected to be nonsingluar in order to have a unique non-trivial solution. Here
+the vector $b$ can be represented as a linear combination of the columns of $A$.
+This simply means that $b\in span(A)$, where $span(A)={Ax:x\in \mathbb{R}^n}$ 
+
+However not all problems in real life is as simple as this, we have to deal with
+rectangular sytems, i.e., $m\neq n$. Well on most scenarios when this happens,
+we have $m\geq n$, and we have different iterative approaches to its solution. 
+\subsection{Vector and Matrix Norms}
+Since we will be approximating the unknown vectors and eventually matrices, we
+need to have way to measure their 'sizes'. Hence we need to apply the scalar concepts of, magnitude, absolute value, or modulus to vectors and matrices.
+
+
+
+
 \section{Introduction to Matrix Factorization}
 Since this chapter is dedicated to the mathematical principles that drives the
 prediction models, we can begin with a direct statement, the data matrix is

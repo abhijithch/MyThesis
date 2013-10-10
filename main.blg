@@ -44,45 +44,45 @@ while executing---line 1090 of file plain.bst
 Too many commas in name 1 of "Paul C.Zikopoulos, Chris Eaton, Dirk deRoos, Thomas Deutsch, George Lapis" for entry IBM-BigData
 while executing---line 1090 of file plain.bst
 Warning--empty year in IBM-BigData
-You've used 19 entries,
+You've used 20 entries,
             2118 wiz_defined-function locations,
-            630 strings with 7579 characters,
-and the built_in function-call counts, 5834 in all, are:
-= -- 579
-> -- 228
-< -- 5
-+ -- 93
-- -- 72
-* -- 384
-:= -- 922
-add.period$ -- 54
-call.type$ -- 19
-change.case$ -- 89
+            639 strings with 7865 characters,
+and the built_in function-call counts, 6333 in all, are:
+= -- 635
+> -- 246
+< -- 6
++ -- 100
+- -- 78
+* -- 416
+:= -- 994
+add.period$ -- 58
+call.type$ -- 20
+change.case$ -- 95
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 242
-empty$ -- 505
-format.name$ -- 72
-if$ -- 1256
+cite$ -- 26
+duplicate$ -- 265
+empty$ -- 544
+format.name$ -- 78
+if$ -- 1372
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 16
-newline$ -- 91
-num.names$ -- 34
-pop$ -- 111
+int.to.str$ -- 20
+missing$ -- 17
+newline$ -- 96
+num.names$ -- 36
+pop$ -- 117
 preamble$ -- 1
-purify$ -- 72
+purify$ -- 77
 quote$ -- 0
-skip$ -- 189
+skip$ -- 208
 stack$ -- 0
-substring$ -- 345
-swap$ -- 56
-text.length$ -- 5
+substring$ -- 382
+swap$ -- 66
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 76
 warning$ -- 6
-while$ -- 57
-width$ -- 21
-write$ -- 194
+while$ -- 62
+width$ -- 22
+write$ -- 208
 (There were 12 error messages)

@@ -12,29 +12,75 @@ occasions when we need help in taking certain decisions. Recommendations in
 general is ubiquitous when there is a need to make choices without sufficient
 personal experience, we rely on feedback from users on certain products, we make
 use of recommendation letters for jobs, reviews of movies and books
-\cite{Resnick:1997:RS:245108.245121}. 
-  The term Collaborative Filtering was first termed by Tapestry
+\cite{Resnick:1997:RS:245108.245121}. Consider for a movie streaming company
+like NETFLIX, where people can watch movies from a huge collection, have been
+collecting the ratings of the movies from the users. This data can be considered
+as our \emph{training data}, it is explicitly obtained from the users. Using
+this training data the company makes predicitions of movies the users are likely
+to prefer watching more than others. This is only one of the different types of
+recommender systems. 
+\subsection{Recommender System Strategies}
+The strategies for building recommender systems are based on the type of data
+available and how the data is used. On a broad sense the two main approaches are
+\emph{content-based filtering}, in which the items are characterized based on 
+certain attributes, and recommendation are made based on filtering similar
+items. In the second approach, \emph{collaborative filtering}, the ratings
+previously given by users is used to build a model, which is then used to make
+predictions. The term Collaborative Filtering was first termed by Tapestry
 \cite{Goldberg:1992:UCF:138859.138867}, which was one of the first recommender
 systems. Recommender
 Systems produce possibly accurate prediction of relationship between elements of
-different classes based on some previous knowledge. This previous knowledge
-could be explicitly available like ratings given by users to items or when this
-explicit knowledge is insufficient, we could use implicit knowledge which is
-abundantly available. But however in this thesis work we model our system based
-on explicit knowledge. Also the model can be built using content-based approach
-or by exploiting the users-item interaction space. 
+different classes based on previous knowledge or the \emph{training data}. This
+training data could be explicitly obtained in the form of ratings given by
+users or it could be implicit knowledge(purchase
+history, browsing history, search patterns,mouse movements etc), which can be
+used when explicit knowledge is insufficient \cite{Hu:2008:CFI:1510528.1511352}.
+But however in this thesis work we model our system based on explicit
+knowledge. 
 
 Modern recommender systems are based on the collaborative filtering, which again
-is of two types, the \textit{nearest neighbor approach} and the \textit{latent
+is of two types, the \emph{nearest neighbor approach} and the \emph{latent
 factor approach}. In the nearest neighbor methods, items or users are given
-certain
-attributes which decides the proximity between them. Further this sense of
-proximity is used predict an item for an user. The second approach is
+certain attributes which decides the proximity between them. Further this sense
+of proximity is used predict an item for an user. The second approach is
 the latent factor approach, which characterizes the users and the items together
 in building the model. Matrix factorization is used to build these models, likes
 of SVD is very useful. \emph{Rating matrix} proves to be important, as it
 charectarizes both items and users as its vectors. 
-\clearpage
+
+\subsection{The Problem Formulation}
+Our problem could be defined as a matrix completion problem, where the matrix is
+formed by placing the users $u$ along the rows and the movies $m$ along the
+rows. The entries in this matrix are filled through the \emph{training data},
+which is collection of $n$ \emph{quadruples}, with the format
+(\emph{user(k)},\emph{movie(k)},\emph{rating(k)},\emph{timestamp(k)}), where
+$k=1,2...,n$. The $1 \leq user \leq u$ and $1 \leq movie \leq m$ are the
+range of the users and the movies, where as the ratings, $1<rating<5$. The
+\emph{Rating
+matrix} is defined as $R\in\mathbb{R}^{u,m}$, \\
+\begin{equation}
+  R[i,j]=\begin{cases}
+    rating(k), & \text{$i=user(k), j=movie(k)$}.\\
+    ?, & \text{otherwise}.
+  \end{cases}
+\end{equation}
+
+where \emph{'?'} are the cases where the \emph{user-movie} relation is unknown.
+These are the values which needs to be predicted. Once the \emph{'?'} values are
+computed, recommendations could be made depending on the required tolerance
+level, \emph{user-movie} pairs with predicted ratings higer than the tolerant
+value(threshold) can be selected for making recommendations. Hence this problem
+can be viewed as a \emph{matrix completion} problem. In this thesis work, we
+will compute the unknowns for a certain subset called the \emph{test set}. \\
+
+Let us denote the completed matrix, or rather the reconstructed matrix by
+\emph{$\hat_{R}$}. We intend to obtain the
+\emph{$\hat_{R}$}, by reproducing it through a simple product of two matrices
+with reduced \emph{inner dimension}. Let $P\in\mathbb{R}^{u,f}$ and
+$Q\in\mathbb{R}^{f,m}$ are the two matrices with reduced inner dimension
+\emph{f}. 
+
+
 Let us through a very simple example see the principle behind collaborative
 filtering.
 
@@ -310,8 +356,6 @@ $(3.6+1+..)$. It clearly shows that Joe would evetually like the movie Die
 Hard, which is evident from the high rating value obtained.   
 \end{example}\\
 
-Represent SVD Graphically here \\
-
  The model in its most basic form is built around the following \\
  $R=P*Q'$
  where $P\in\mathbb{R}^{u,f}$ and $Q\in\mathbb{R}^{i,f}$. The number $f$ is
@@ -330,7 +374,7 @@ $\hat{r}_{ui}=q_{i}^Tp_{u}.$ \\
 
 This dot product gives the iteraction between the item $i$ and the user $u$. The
 challenge is in the mapping of all the users and items to a joint latent factor
-space of dimensionality $f$ \refname{Koren - Matrix factorization for RS}.\\
+space of dimensionality $f$ \cite{Koren:2009:MFT:1608565.1608614}.\\
 Singular Value Decomposition (SVD), would be first choice for such a
 factorization, as it helps a great deal in identifying the the best top-most
 factors, i.e by selecting the left and right singular vectors corresponding to
@@ -366,13 +410,14 @@ is reduced.
 
 \subsection{Different Models}
 Collaborative Filtering based Recommender Systems are built using either
-Neighbourhood-methods or model-based methods. Our approach involves the
+Neighbourhood-methods or model-based methods
+\cite{Koren:2008:FMN:1401890.1401944}. Our approach involves the
 model-based method, which has proved to be one of the most effective approach as
 is evident from the NETFLIX Challenge and large number of research articles on
 the same topic. To have a good Recommender System, it is important to achieve
 good accuracy and also to keep the model simple. Keeping this in mind, we try to
 build a model which accounts for significant predictor variables, like the
-temporal dynamics, user-bias, movie-bias etc. HOwever we initially analyze these
+temporal dynamics, user-bias, movie-bias etc. However we initially analyze these
 individual predictors and after careful analyses, we blend them together in the
 final model to achieve the best RMSE. The main principle behind our model of
 laten factor modelling, supplemented with the removal of biases pertaining to
@@ -435,7 +480,8 @@ the users or movies, independetly of the interaction between the two groups.
 The interaction is captured in the factorization part and the inner products of
 the interacting vectors. The main purpose of doing this is, by separating the
 interaction and the biases will help us in subjecting only the interaction
-portion of the data which is more critical. \ref{7}
+portion of the data which is more critical
+\cite{Koren:2010:CFT:1721654.1721677}.
 The $Baseline predictors$ capture these biases which do not involve user-movie
 interaction. While factorization these biases are removed only to be added after
 factorization, i.e, post-processing. 

@@ -50,12 +50,17 @@ the data from previously measured or normative values.
 
 From a mathematical perspective data mining or pattern recognition can be viewed
 as a data model fitting problem. The processed data what we use to build a
-model upon is called as the $training data$. This training data is prepared from
-the factual previous knowledge. Next after building a model, we would like to
-ensure its validity. There needs to be some kind of measurement to esnure
-certain desirable degree of correctness of the model. This forms the $error
-analysis$, and metrics like $RMSE$ are used often. Linear algebra proves to be
-pivotal in data mining, \cite{eld-mm:07} to build these models. 
+model upon is called as the \emph{training data}. This training data is prepared
+from the factual previous knowledge. Next after building a model, we would like
+to ensure its validity. There needs to be some kind of measurement to esnure
+certain desirable degree of correctness of the model. This forms the \emph{error
+analysis}, and metrics like \emph{RMSE} are used often. Linear algebra proves to
+be pivotal in data mining, \cite{eld-mm:07} to build these models. 
+
+In this master thesis work, our goal is to build a recommender system, which
+will help people choose movies they would like to watch. For building the same,
+we need some previous knowledge, an idea or some methodology on how to model
+this data, and some measure for degree of accuracy of the model.  
 
 The kind of prediction we are dealing with is ratings prediction, which gives
 an indication of user's preference to items. Depending on the predicted rating

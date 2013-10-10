@@ -51,6 +51,13 @@ David Goldberg, David Nichols, Brian~M. Oki, and Douglas Terry.
 \newblock Using collaborative filtering to weave an information tapestry.
 \newblock {\em Commun. ACM}, 35(12):61--70, December 1992.
 
+\bibitem{Hu:2008:CFI:1510528.1511352}
+Yifan Hu, Yehuda Koren, and Chris Volinsky.
+\newblock Collaborative filtering for implicit feedback datasets.
+\newblock In {\em Proceedings of the 2008 Eighth IEEE International Conference
+  on Data Mining}, ICDM '08, pages 263--272, Washington, DC, USA, 2008. IEEE
+  Computer Society.
+
 \bibitem{Koren:2008:FMN:1401890.1401944}
 Yehuda Koren.
 \newblock Factorization meets the neighborhood: a multifaceted collaborative

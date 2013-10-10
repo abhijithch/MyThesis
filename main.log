@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.12.5)  26 SEP 2013 22:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.12.5)  10 OCT 2013 10:11
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -609,42 +609,101 @@ Chapter 2.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 42--46
+Underfull \hbox (badness 10000) in paragraph at lines 52--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 68--75
 
  []
 
+! Missing { inserted.
+<to be read again> 
+                   $
+l.77 \emph{$\hat_{R}$}
+                      . We intend to obtain the
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--65
+! Missing } inserted.
+<inserted text> 
+                }
+l.77 \emph{$\hat_{R}$}
+                      . We intend to obtain the
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
- []
+! Missing { inserted.
+<to be read again> 
+                   }
+l.77 \emph{$\hat_{R}$}
+                      . We intend to obtain the
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.77 \emph{$\hat_{R}$}
+                      . We intend to obtain the
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.78 \emph{$\hat_{R}$}
+                      , by reproducing it through a simple product of two ma...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.78 \emph{$\hat_{R}$}
+                      , by reproducing it through a simple product of two ma...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   }
+l.78 \emph{$\hat_{R}$}
+                      , by reproducing it through a simple product of two ma...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.78 \emph{$\hat_{R}$}
+                      , by reproducing it through a simple product of two ma...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--95
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--107
+Underfull \hbox (badness 10000) in paragraph at lines 88--92
 
  []
 
@@ -653,24 +712,40 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[4
-
-]
-Overfull \hbox (10.327pt too wide) in paragraph at lines 150--216
- [][] 
- []
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 216.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 216.
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--229
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 
-Underfull \vbox (badness 1264) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 104--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--153
+
+ []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -678,12 +753,23 @@ $[]$
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 230--245
+Overfull \hbox (10.327pt too wide) in paragraph at lines 196--262
+ [][] 
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 262.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 262.
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--275
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 276--291
+
+ []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -691,9 +777,7 @@ $[]$
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 277--299
-
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -701,22 +785,12 @@ $[]$
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 323--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--326
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--336
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
@@ -726,7 +800,27 @@ $[]$
  []
 
 [8]
-Overfull \hbox (34.45113pt too wide) in paragraph at lines 366--380
+Underfull \hbox (badness 10000) in paragraph at lines 359--372
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--382
+
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[9]
+Overfull \hbox (34.45113pt too wide) in paragraph at lines 412--426
 \T1/lmr/m/n/10 Collaborative Fil-ter-ing based Rec-om-mender Sys-tems are built
  us-ing ei-ther Neighbourhood-
  []
@@ -736,45 +830,53 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[9]
+[10]
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[10]
+[11]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./ALS_FIG.pdf): PDF inclusion: found PD
 F version <1.5>, but at most version <1.4> allowed
-<ALS_FIG.pdf, id=99, 835.41315pt x 368.32182pt>
+<ALS_FIG.pdf, id=103, 835.41315pt x 368.32182pt>
 File: ALS_FIG.pdf Graphic file (type pdf)
  <use ALS_FIG.pdf>
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 507.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 553.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 507
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 553
 .
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[11 <./ALS_FIG.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./ALS_FIG2.pdf): PDF inclusion: found P
 DF version <1.5>, but at most version <1.4> allowed
-<ALS_FIG2.pdf, id=167, 445.41226pt x 196.35286pt>
+<ALS_FIG2.pdf, id=105, 445.41226pt x 196.35286pt>
 File: ALS_FIG2.pdf Graphic file (type pdf)
- <use ALS_FIG2.pdf>)
+ <use ALS_FIG2.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[12 <./ALS_FIG2.pdf>]
+[12 <./ALS_FIG.pdf>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[13 <./ALS_FIG2.pdf>]
 \openout2 = `TemporalDynamics.aux'.
 
- (./TemporalDynamics.tex
+ (./TemporalDynamics.tex [14
+
+
+
+]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--17
@@ -786,11 +888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--48
 
  []
 
-[13
-
-
-
-]
+[15]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 49.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -798,11 +896,11 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 49.
 
-<./New/MovieMeans_AllMovie.pdf, id=194, 411.5375pt x 308.15125pt>
+<./New/MovieMeans_AllMovie.pdf, id=200, 411.5375pt x 308.15125pt>
 File: ./New/MovieMeans_AllMovie.pdf Graphic file (type pdf)
 
 <use ./New/MovieMeans_AllMovie.pdf>
-<./New/MovieMeans_AllMovie_Age.pdf, id=195, 411.5375pt x 308.15125pt>
+<./New/MovieMeans_AllMovie_Age.pdf, id=201, 411.5375pt x 308.15125pt>
 File: ./New/MovieMeans_AllMovie_Age.pdf Graphic file (type pdf)
 
 <use ./New/MovieMeans_AllMovie_Age.pdf>
@@ -819,27 +917,27 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[14] <./New/MonthlyAve_AllMovies.pdf, id=199, 449.68pt x 337.26pt>
+[16] <./New/MonthlyAve_AllMovies.pdf, id=205, 449.68pt x 337.26pt>
 File: ./New/MonthlyAve_AllMovies.pdf Graphic file (type pdf)
 
 <use ./New/MonthlyAve_AllMovies.pdf>
-<./New/WeeklyAve_AllMovies.pdf, id=200, 449.68pt x 337.26pt>
+<./New/WeeklyAve_AllMovies.pdf, id=206, 449.68pt x 337.26pt>
 File: ./New/WeeklyAve_AllMovies.pdf Graphic file (type pdf)
 
 <use ./New/WeeklyAve_AllMovies.pdf>
-<./New/MonthlyAve_M129.pdf, id=201, 449.68pt x 337.26pt>
+<./New/MonthlyAve_M129.pdf, id=207, 449.68pt x 337.26pt>
 File: ./New/MonthlyAve_M129.pdf Graphic file (type pdf)
 
 <use ./New/MonthlyAve_M129.pdf>
-<./New/WeeklyAve_M129.pdf, id=202, 449.68pt x 337.26pt>
+<./New/WeeklyAve_M129.pdf, id=208, 449.68pt x 337.26pt>
 File: ./New/WeeklyAve_M129.pdf Graphic file (type pdf)
 
 <use ./New/WeeklyAve_M129.pdf>
-<./New/MonthlyAve_M1476.pdf, id=203, 449.68pt x 337.26pt>
+<./New/MonthlyAve_M1476.pdf, id=209, 449.68pt x 337.26pt>
 File: ./New/MonthlyAve_M1476.pdf Graphic file (type pdf)
 
 <use ./New/MonthlyAve_M1476.pdf>
-<./New/WeeklyAve_M1476.pdf, id=204, 449.68pt x 337.26pt>
+<./New/WeeklyAve_M1476.pdf, id=210, 449.68pt x 337.26pt>
 File: ./New/WeeklyAve_M1476.pdf Graphic file (type pdf)
 
 <use ./New/WeeklyAve_M1476.pdf>
@@ -859,114 +957,50 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[15 <./New/MovieMeans_AllMovie.pdf> <./New/MovieMeans_AllMovie_Age.pdf>]
+[17 <./New/MovieMeans_AllMovie.pdf> <./New/MovieMeans_AllMovie_Age.pdf>]
 
-LaTeX Warning: Text page 16 contains only floats.
+LaTeX Warning: Text page 18 contains only floats.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[16 <./New/MonthlyAve_AllMovies.pdf> <./New/WeeklyAve_AllMovies.pdf> <./New/Mon
+[18 <./New/MonthlyAve_AllMovies.pdf> <./New/WeeklyAve_AllMovies.pdf> <./New/Mon
 thlyAve_M129.pdf> <./New/WeeklyAve_M129.pdf> <./New/MonthlyAve_M1476.pdf> <./Ne
 w/WeeklyAve_M1476.pdf>])
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[17]
+[19]
 \openout2 = `MathematicalBackground.aux'.
 
- (./MathematicalBackground.tex [18
+ (./MathematicalBackground.tex [20
 
 
 
 ]
 Chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--43
-
- []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-
- []
-
-
-Overfull \hbox (14.98158pt too wide) in paragraph at lines 86--88
-[]\T1/lmr/m/sl/10 For a ma-trix A $\OMS/lmsy/m/n/10 2 \U/msb/m/n/10 R[]$\T1/lmr
-/m/sl/10 , with $\OML/lmm/m/it/10 rank\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 A\OT1/l
-mr/m/n/10 ) =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
-
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[20]
-Overfull \hbox (3.81256pt too wide) in paragraph at lines 105--105
-[]\T1/lmr/bx/n/14.4 Matrix ap-prox-i-ma-tion us-ing Al-ter-nat-ing Least
- []
-
-
-Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
-d on input line 123.
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
 [21]
-! Undefined control sequence.
-<argument> ...^T\bold {m}_j-r_{ij})m_{kj}+\lambds 
-                                                  n_{u_{i}}u_{ki}=0, & \fora...
-l.197   \end{align}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
 
-! Undefined control sequence.
-<argument> ...^T\bold {m}_j-r_{ij})m_{kj}+\lambds 
-                                                  n_{u_{i}}u_{ki}=0, & \fora...
-l.197   \end{align}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -974,32 +1008,94 @@ $[]$
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
+Underfull \hbox (badness 10000) in paragraph at lines 97--103
 
  []
 
 
-Underfull \vbox (badness 5939) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
+Overfull \hbox (14.98158pt too wide) in paragraph at lines 107--109
+[]\T1/lmr/m/sl/10 For a ma-trix A $\OMS/lmsy/m/n/10 2 \U/msb/m/n/10 R[]$\T1/lmr
+/m/sl/10 , with $\OML/lmm/m/it/10 rank\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 A\OT1/l
+mr/m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
+
+ []
+
+
+Overfull \hbox (3.81256pt too wide) in paragraph at lines 126--126
+[]\T1/lmr/bx/n/14.4 Matrix ap-prox-i-ma-tion us-ing Al-ter-nat-ing Least
+ []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[23])
+[23]
+
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
+d on input line 144.
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
 [24]
+! Undefined control sequence.
+<argument> ...^T\bold {m}_j-r_{ij})m_{kj}+\lambds 
+                                                  n_{u_{i}}u_{ki}=0, & \fora...
+l.218   \end{align}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...^T\bold {m}_j-r_{ij})m_{kj}+\lambds 
+                                                  n_{u_{i}}u_{ki}=0, & \fora...
+l.218   \end{align}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--226
+
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
 [25]
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[26])
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[27]
 \openout2 = `ImplementationResults.aux'.
 
- (./ImplementationResults.tex [26
+ (./ImplementationResults.tex [28
 
 
 
@@ -1008,7 +1104,7 @@ Chapter 5.
 
 Underfull \vbox (badness 1264) has occurred while \output is active []
 
- [27]
+ [29]
 
 ! LaTeX Error: \caption outside float.
 
@@ -1488,77 +1584,77 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[28]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
-<./Results/plots/model1.pdf, id=277, 449.68pt x 337.26pt>
+<./Results/plots/model1.pdf, id=283, 449.68pt x 337.26pt>
 File: ./Results/plots/model1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model1.pdf>
-<./Results/plots/model2.pdf, id=278, 449.68pt x 337.26pt>
+<./Results/plots/model2.pdf, id=284, 449.68pt x 337.26pt>
 File: ./Results/plots/model2.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model2.pdf>
-<./Results/plots/model3.pdf, id=279, 449.68pt x 337.26pt>
+<./Results/plots/model3.pdf, id=285, 449.68pt x 337.26pt>
 File: ./Results/plots/model3.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model3.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Results/plots/model4.pdf, id=280, 449.68pt x 337.26pt>
+<./Results/plots/model4.pdf, id=286, 449.68pt x 337.26pt>
 File: ./Results/plots/model4.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model4.pdf>
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 173.
 
-<./Results/plots/model4_1.pdf, id=281, 449.68pt x 337.26pt>
+<./Results/plots/model4_1.pdf, id=287, 449.68pt x 337.26pt>
 File: ./Results/plots/model4_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model4_1.pdf>
-<./Results/plots/model5.pdf, id=282, 449.68pt x 337.26pt>
+<./Results/plots/model5.pdf, id=288, 449.68pt x 337.26pt>
 File: ./Results/plots/model5.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model5.pdf>
-<./Results/plots/model5_1.pdf, id=283, 449.68pt x 337.26pt>
+<./Results/plots/model5_1.pdf, id=289, 449.68pt x 337.26pt>
 File: ./Results/plots/model5_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model5_1.pdf>
-<./Results/plots/model6.pdf, id=284, 449.68pt x 337.26pt>
+<./Results/plots/model6.pdf, id=290, 449.68pt x 337.26pt>
 File: ./Results/plots/model6.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model6.pdf>
-<./Results/plots/model6_1.pdf, id=285, 449.68pt x 337.26pt>
+<./Results/plots/model6_1.pdf, id=291, 449.68pt x 337.26pt>
 File: ./Results/plots/model6_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model6_1.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Results/plots/model7.pdf, id=286, 449.68pt x 337.26pt>
+<./Results/plots/model7.pdf, id=292, 449.68pt x 337.26pt>
 File: ./Results/plots/model7.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model7.pdf>
-<./Results/plots/model7_1.pdf, id=287, 449.68pt x 337.26pt>
+<./Results/plots/model7_1.pdf, id=293, 449.68pt x 337.26pt>
 File: ./Results/plots/model7_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model7_1.pdf>
-<./Results/plots/model8.pdf, id=288, 449.68pt x 337.26pt>
+<./Results/plots/model8.pdf, id=294, 449.68pt x 337.26pt>
 File: ./Results/plots/model8.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model8.pdf>
-<./Results/plots/model8_1.pdf, id=289, 449.68pt x 337.26pt>
+<./Results/plots/model8_1.pdf, id=295, 449.68pt x 337.26pt>
 File: ./Results/plots/model8_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model8_1.pdf>
-<./Results/plots/model9.pdf, id=290, 449.68pt x 337.26pt>
+<./Results/plots/model9.pdf, id=296, 449.68pt x 337.26pt>
 File: ./Results/plots/model9.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model9.pdf>
-<./Results/plots/model9_1.pdf, id=291, 449.68pt x 337.26pt>
+<./Results/plots/model9_1.pdf, id=297, 449.68pt x 337.26pt>
 File: ./Results/plots/model9_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model9_1.pdf>
@@ -1570,32 +1666,32 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[29]
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[30 <./Results/plots/model1.pdf> <./Results/plots/model2.pdf> <./Results/plots/
-model3.pdf>])
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
 [31]
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[32 <./Results/plots/model4.pdf> <./Results/plots/model4_1.pdf> <./Results/plot
+[32 <./Results/plots/model1.pdf> <./Results/plots/model2.pdf> <./Results/plots/
+model3.pdf>])
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[33]
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[34 <./Results/plots/model4.pdf> <./Results/plots/model4_1.pdf> <./Results/plot
 s/model5.pdf> <./Results/plots/model5_1.pdf> <./Results/plots/model6.pdf> <./Re
 sults/plots/model6_1.pdf>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[33 <./Results/plots/model7.pdf> <./Results/plots/model7_1.pdf> <./Results/plot
+[35 <./Results/plots/model7.pdf> <./Results/plots/model7_1.pdf> <./Results/plot
 s/model8.pdf> <./Results/plots/model8_1.pdf> <./Results/plots/model9.pdf> <./Re
-sults/plots/model9_1.pdf>] (./main.bbl [34
+sults/plots/model9_1.pdf>] (./main.bbl [36
 
 
 ]
@@ -1608,12 +1704,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
 \T1/lmr/m/n/10 http://edition.cnn.com/2012/11/07/tech/web/obama-campaign-tech-
  []
 
-[35])
+[37])
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[36]
+[38]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
@@ -1645,7 +1741,7 @@ l.31 \caption
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [37
+) [39
 
 
 
@@ -1657,13 +1753,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5455 strings out of 495061
- 72328 string characters out of 1182621
- 152158 words of memory out of 3000000
- 8401 multiletter control sequences out of 15000+50000
+ 5456 strings out of 495061
+ 72357 string characters out of 1182621
+ 152164 words of memory out of 3000000
+ 8402 multiletter control sequences out of 15000+50000
  119540 words of font info for 77 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 41i,12n,36p,281b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,36p,281b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -1685,9 +1781,9 @@ m/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf-texlive/fonts/type1/public/
 amsfonts/symbols/msam7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb>
-Output written on main.pdf (49 pages, 840308 bytes).
+Output written on main.pdf (51 pages, 845084 bytes).
 PDF statistics:
- 461 PDF objects out of 1000 (max. 8388607)
+ 467 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
