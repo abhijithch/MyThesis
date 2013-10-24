@@ -13,10 +13,12 @@ The nature of the problem and the data we are dealing with is linear in nature,
 and hence we should start by looking into the basic principles involved in
 solutions of linear systems. Almost all the complex linear problems when broken
 down to the most granular level, can be viewed as,
-\begin{equation}
+\begin{equation} 
   Ax=b,
+\label{eq:4.1}  
 \end{equation}
-where $A\in\mathbb{R}^{m x n}$, $x\in \mathbb{R}^n$ and $b\in \mathbb{R}^m$. It
+where $A\in\mathbb{R}^{m \times	 n}$, $x\in \mathbb{R}^n$ and $b\in
+\mathbb{R}^m$. It
 is applied to deal with real life problems, by considering $x$ to be vector of
 causes and $b$ to be the vector of effects of a system which is characterized by
 matrix $A$. So when we know the causal vector $x$ we can find the effect $b$, by
@@ -95,7 +97,12 @@ solutions, we have to deal with \emph{overdetermined} system,
 \[
  Ax\cong b,
 \]
-where $A\in \mathbb{R}^{m \times n}$, with $m>n$, $x\in \mathbb{R}^n$ and $b\in \mathbb{R}^m$. 
+where $A\in \mathbb{R}^{m \times n}$, with $m>n$, $x\in \mathbb{R}^n$ and $b\in
+\mathbb{R}^m$. In this case it would not be possible to represent
+$m$-dimensional $b$, as linear combinations of only $n$ column vectors of $A$.
+It so happens that the points on the LHS and RHS, are not in a common space.
+Hence we would look to minimize some norm of the \emph{residual}, $r=b-Ax$. The
+solution obtained here is in the \emph{least squares} sense. 
 
 
 Let us classify the problems, as type-I, in which we have to deal with exactly
@@ -108,8 +115,74 @@ order to quantize the difference between the \emph{very} and \emph{almost}
 linear dependence, we make use of orthogonality. The good vectors, i.e., the
 very linearly dependent vectors are close to orthogonal. 
 
+\subsection{Orthogonality}
+Why is \emph{orthogonality} important to us? Our basic approach in building the
+prediction model, is to factorize the rating matrix $R\in \mathbb{R}^{m \times
+n}$ with $m>n$, into $P\in \mathbb{R}^{m \times k}$ and $Q\in \mathbb{R}^{n
+\times k}$, where generally $k<<n<m$. By reducing the dimensions, we are
+removing the bad basis vectors, i.e., vectors carrying no significant useful
+information. It is strongly desired that the remaining good basis vectors be
+orthogonal to each other. 
 
-  
+Two nonzero vectors $x$ and $y$ are orthogonal to each other, if $x^Ty=0$, which
+is the same as $cos\theta=0$, where $\theta$ is the angle between $x$ and $y$. 
+\begin{proposition}
+Let $q_j$, j=1,2,...,n, be orthogonal, i.e., $q_i^Tq_j=0$, i\unequal j. Then the
+vectors $q_j$ are all linearly independent.
+\end{proposition}
+
+We will now see how we can decompose the matrix to more compact forms, using
+orthogonal transformations. QR decomposition is one stable technique to achieve
+this. QR decomposition is not very useful for our problem due to various
+reasons, which will me mentioned later, it helps in understanding the concepts
+and gradually take us to the more complex methods like SVD, which will be
+introduced later. The matrix $A\in \mathbb{R}^{m\times n}$, which is usually the
+data matrix, can be factorized as shown below,
+\[
+ A = Q\left(\begin{array}{ccc}
+		R \\
+               0  \end{array}\right), 
+\]	
+where $Q \in \mathbb{R}^{m \times m}$ is orthogonal and $R \in \mathbb{R}^{m
+\times n}$ is upper triangular. 
+
+The main reason to factorize the data matrix are, 
+\begin{enumerate}
+ \item Compact representation
+ \item Representation in terms of \emph{basis} in column-space, row-space or
+both column and row space. 
+\end{enumerate}
+
+Below Figure ~\ref{fig:QR Factorization}, show how QR factorization achieves the
+above goals, i.e., firstly compact representation, which is achieved by reducing
+the \emph{rank}$=k$. It can be shown that by optimally choosing the rank k, we
+get better performance. 
+This value of k, can be chosen by trial and error methods. Secondly, QR
+factorization helps us in representing the matrix in terms of the basis vectors
+in the column space or in the row space. In the figure below, we can see that
+the matrix \emph{Q}, forms the orthonormal basis for the column space of
+\emph{A}. This means that, the factors in the column space if \emph{A} defines
+or characterizes the system. This means that the known information is used only
+from only one dimension. So this technique is more suitable for solving linear
+systems in least squares sense, as in Equation ~\ref{eq:4.1}, where only the
+column-space is sufficient, as the known vector \emph{b} lies in the column
+space. 
+\begin{figure}[h!]
+
+\includegraphics[width=0.9\textwidth]{QR_Fig.pdf}
+\caption{QR Factorization with reduced rank, $k$}
+\label{fig:QR Factorization}
+\end{figure}
+
+
+We shall consider an example application, to study the concepts discussed. This
+example is obtained from \cite{eld-mm:07}. 
+\begin{example}
+ Consider a text mining application, where we need to search for documents based
+on some queries. The documents are listed below, with the keywords highlighted. 
+\end{example}
+
+
 \section{Introduction to Matrix Factorization}
 Since this chapter is dedicated to the mathematical principles that drives the
 prediction models, we can begin with a direct statement, the data matrix is

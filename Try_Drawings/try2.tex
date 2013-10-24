@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{tikz}
+
+\begin{document}
+
+\tikzset{rect style/.style={rotate=#1,scale=2,every node/.style={rotate=#1}}}
+\begin{tikzpicture}[rect style=-30]
+\pgfmathsetmacro\x{2}     
+\pgfmathsetmacro\y{1}
+\draw (0,0) rectangle  +(\x,\y); 
+\node[above] at (.5*\x,\y){$m$};
+\end{tikzpicture}
+
+\begin{tikzpicture}[rect style=30]
+\pgfmathsetmacro\x{2}     
+\pgfmathsetmacro\y{1} 
+\draw (0,0) rectangle  +(\x,\y); 
+\path (0,\y) --  (\x,\y) node[midway,above] {$m$};
+\end{tikzpicture}  
+
+\end{document}

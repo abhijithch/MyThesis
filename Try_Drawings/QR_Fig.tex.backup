@@ -1,0 +1,75 @@
+%!TEX encoding = UTF-8 Unicode
+% Author: Laurent Dutriaux
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage{fourier} % Utilisation des polices texte
+\usepackage{tikz}
+%%%<
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+%%%>
+
+\usetikzlibrary[positioning]
+\usetikzlibrary{patterns}
+\usepackage[french]{babel} % styles français
+
+\begin{document}
+\begin{tikzpicture}
+%\draw[help lines] (0,0) grid (18,11);
+\pgfmathsetmacro\x{3}     
+\pgfmathsetmacro\y{11}
+\filldraw[fill=blue!20] (1,1) rectangle +(\x,\y);
+\draw[thin] (1,1) rectangle +(\x,\y);
+\node[above] at (.5*\x + 1,\y + 1){$A$};
+\draw [thick,|-] (0,12) -- (0,7);
+\node[below] at (0,7){$m$};
+\draw [thick,-|] (0,6.5) -- (0,1);
+\draw [thick,|-] (1,0) -- (2.25,0);
+\node[right] at (2.25,0){$n$};
+\draw [thick,-|] (2.75,0) -- (4,0);
+
+% X=5
+\node[above] at (\x + 2,.5*\y +1){$\boldmath{=}$};
+
+%X=6
+\draw [thick,|-] (6,12) -- (6,7);
+\node[below] at (6,7){$m$};
+\draw [thick,-|] (6,6.5) -- (6,1);
+%X=7
+\filldraw[fill=blue!20] (7,1) rectangle +(\x,\y);
+\draw[thin] (7,1) rectangle +(\x,\y);
+\node[above] at (.5*\x + 7,\y + 1){$Q$};
+\draw [thick,|-] (7,0) -- (7.9,0);
+\node[right] at (7.9,0){$k\leq n$};
+\draw [thick,->] (9.1,0) -- (10,0);
+
+%X=11
+\draw [thick,|-] (11,12) -- (11,10.8);
+\node[below] at (11,10.8){$k\leq n$};
+\draw [thick,->] (11,10.2) -- (11,9);
+
+%X=12
+\draw[thin] (12,9) rectangle +(\x,\x);
+\node[above] at (.5*\x + 12,\y + 1 ){$R$};
+
+
+% \filldraw[fill=blue!20,very thick] (3.5,8) rectangle +(3,3);
+% \draw (4.5,8) rectangle +(1,1);
+% \draw (3.5,9) rectangle +(1,1);
+% \draw (5.5,9) rectangle +(1,1);
+% \draw (4.5,10) rectangle +(1,1);
+% 
+% 
+% \filldraw[fill=blue!20] (7,10) rectangle +(4,1);
+% \filldraw[fill=blue!20] (11,9) rectangle +(3,1);
+% \filldraw[fill=blue!20] (14,8) rectangle +(4,1);
+% 
+% 
+% \draw[very thick] (7,8) rectangle +(11,3);
+
+
+\end{tikzpicture}
+
+\end{document}

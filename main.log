@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.12.5)  10 OCT 2013 15:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.12.5)  23 OCT 2013 17:41
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -413,19 +413,19 @@ LaTeX Warning: Label `fig:RMSE SVD' multiply defined.
 ) (./appendix.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 75.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -483,42 +483,42 @@ driver: pdftex
 \@twosidetrue \@mparswitchtrue 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package crop Info: requested driver: `' on input line 73.
-Package crop Info: detected driver: `pdftex' on input line 73.
-Package crop Info: using `pdftex' graphics driver on input line 73.
+Package crop Info: requested driver: `' on input line 75.
+Package crop Info: detected driver: `pdftex' on input line 75.
+Package crop Info: using `pdftex' graphics driver on input line 75.
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 76.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 78.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 76.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 78.
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 76.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 78.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 76.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 78.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 76.
+(Font)              <10> on input line 78.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 76.
+(Font)              <7> on input line 78.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 76.
-LaTeX Font Info:    Try loading font information for U+msa on input line 76.
+(Font)              <5> on input line 78.
+LaTeX Font Info:    Try loading font information for U+msa on input line 78.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+LaTeX Font Info:    Try loading font information for U+msb on input line 78.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -526,7 +526,7 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 <LiTH_staende_sv.pdf, id=1, 260.975pt x 190.7125pt>
 File: LiTH_staende_sv.pdf Graphic file (type pdf)
  <use LiTH_staende_sv.pdf>
-Overfull \hbox (34.91695pt too wide) in paragraph at lines 76--76
+Overfull \hbox (34.91695pt too wide) in paragraph at lines 78--78
 []| [] 
  []
 
@@ -536,7 +536,7 @@ Overfull \hbox (34.91695pt too wide) in paragraph at lines 76--76
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./LiTH_staende_sv.pdf>] [0
 
 ]
-Overfull \hbox (34.91695pt too wide) in paragraph at lines 76--76
+Overfull \hbox (34.91695pt too wide) in paragraph at lines 78--78
 []| [] 
  []
 
@@ -550,7 +550,7 @@ Overfull \hbox (34.91695pt too wide) in paragraph at lines 76--76
 File: LiTH_sigill_sv.pdf Graphic file (type pdf)
 
 <use LiTH_sigill_sv.pdf>
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 76.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 78.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [3
@@ -988,39 +988,25 @@ $[]$
  []
 
 [22]
+! Undefined control sequence.
+l.130 ...orthogonal, i.e., $q_i^Tq_j=0$, i\unequal
+                                                   j. Then the
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 140--147
+[23] <QR_Fig.pdf, id=259, 445.64793pt x 376.7395pt>
+File: QR_Fig.pdf Graphic file (type pdf)
+ <use QR_Fig.pdf>
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--186
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1028,83 +1014,129 @@ $[]$
  []
 
 [24]
-Overfull \hbox (14.98158pt too wide) in paragraph at lines 190--192
+Underfull \hbox (badness 10000) in paragraph at lines 205--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[25 <./QR_Fig.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+
+Overfull \hbox (14.98158pt too wide) in paragraph at lines 255--257
 []\T1/lmr/m/sl/10 For a ma-trix A $\OMS/lmsy/m/n/10 2 \U/msb/m/n/10 R[]$\T1/lmr
 /m/sl/10 , with $\OML/lmm/m/it/10 rank\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 A\OT1/l
 mr/m/n/10 ) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
+Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
 
 
-Overfull \hbox (3.81256pt too wide) in paragraph at lines 209--209
-[]\T1/lmr/bx/n/14.4 Matrix ap-prox-i-ma-tion us-ing Al-ter-nat-ing Least
- []
-
-
-Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
-d on input line 227.
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[25]
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
 [26]
-! Undefined control sequence.
-<argument> ...^T\bold {m}_j-r_{ij})m_{kj}+\lambds 
-                                                  n_{u_{i}}u_{ki}=0, & \fora...
-l.301   \end{align}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...^T\bold {m}_j-r_{ij})m_{kj}+\lambds 
-                                                  n_{u_{i}}u_{ki}=0, & \fora...
-l.301   \end{align}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 306--309
-
+Overfull \hbox (3.81256pt too wide) in paragraph at lines 274--274
+[]\T1/lmr/bx/n/14.4 Matrix ap-prox-i-ma-tion us-ing Al-ter-nat-ing Least
  []
+
+
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
+d on input line 292.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[27])
+[27]
+! Undefined control sequence.
+<argument> ...^T\bold {m}_j-r_{ij})m_{kj}+\lambds 
+                                                  n_{u_{i}}u_{ki}=0, & \fora...
+l.366   \end{align}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...^T\bold {m}_j-r_{ij})m_{kj}+\lambds 
+                                                  n_{u_{i}}u_{ki}=0, & \fora...
+l.366   \end{align}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \vbox (badness 3189) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
 [28]
+Underfull \hbox (badness 10000) in paragraph at lines 371--374
+
+ []
+
+
+Underfull \vbox (badness 5939) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[29]
+[29])
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[30]
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[31]
 \openout2 = `ImplementationResults.aux'.
 
- (./ImplementationResults.tex [30
+ (./ImplementationResults.tex [32
 
 
 
@@ -1113,7 +1145,7 @@ Chapter 5.
 
 Underfull \vbox (badness 1264) has occurred while \output is active []
 
- [31]
+ [33]
 
 ! LaTeX Error: \caption outside float.
 
@@ -1593,77 +1625,77 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[32]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
-<./Results/plots/model1.pdf, id=290, 449.68pt x 337.26pt>
+<./Results/plots/model1.pdf, id=314, 449.68pt x 337.26pt>
 File: ./Results/plots/model1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model1.pdf>
-<./Results/plots/model2.pdf, id=291, 449.68pt x 337.26pt>
+<./Results/plots/model2.pdf, id=315, 449.68pt x 337.26pt>
 File: ./Results/plots/model2.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model2.pdf>
-<./Results/plots/model3.pdf, id=292, 449.68pt x 337.26pt>
+<./Results/plots/model3.pdf, id=316, 449.68pt x 337.26pt>
 File: ./Results/plots/model3.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model3.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Results/plots/model4.pdf, id=293, 449.68pt x 337.26pt>
+<./Results/plots/model4.pdf, id=317, 449.68pt x 337.26pt>
 File: ./Results/plots/model4.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model4.pdf>
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 173.
 
-<./Results/plots/model4_1.pdf, id=294, 449.68pt x 337.26pt>
+<./Results/plots/model4_1.pdf, id=318, 449.68pt x 337.26pt>
 File: ./Results/plots/model4_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model4_1.pdf>
-<./Results/plots/model5.pdf, id=295, 449.68pt x 337.26pt>
+<./Results/plots/model5.pdf, id=319, 449.68pt x 337.26pt>
 File: ./Results/plots/model5.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model5.pdf>
-<./Results/plots/model5_1.pdf, id=296, 449.68pt x 337.26pt>
+<./Results/plots/model5_1.pdf, id=320, 449.68pt x 337.26pt>
 File: ./Results/plots/model5_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model5_1.pdf>
-<./Results/plots/model6.pdf, id=297, 449.68pt x 337.26pt>
+<./Results/plots/model6.pdf, id=321, 449.68pt x 337.26pt>
 File: ./Results/plots/model6.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model6.pdf>
-<./Results/plots/model6_1.pdf, id=298, 449.68pt x 337.26pt>
+<./Results/plots/model6_1.pdf, id=322, 449.68pt x 337.26pt>
 File: ./Results/plots/model6_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model6_1.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Results/plots/model7.pdf, id=299, 449.68pt x 337.26pt>
+<./Results/plots/model7.pdf, id=323, 449.68pt x 337.26pt>
 File: ./Results/plots/model7.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model7.pdf>
-<./Results/plots/model7_1.pdf, id=300, 449.68pt x 337.26pt>
+<./Results/plots/model7_1.pdf, id=324, 449.68pt x 337.26pt>
 File: ./Results/plots/model7_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model7_1.pdf>
-<./Results/plots/model8.pdf, id=301, 449.68pt x 337.26pt>
+<./Results/plots/model8.pdf, id=325, 449.68pt x 337.26pt>
 File: ./Results/plots/model8.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model8.pdf>
-<./Results/plots/model8_1.pdf, id=302, 449.68pt x 337.26pt>
+<./Results/plots/model8_1.pdf, id=326, 449.68pt x 337.26pt>
 File: ./Results/plots/model8_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model8_1.pdf>
-<./Results/plots/model9.pdf, id=303, 449.68pt x 337.26pt>
+<./Results/plots/model9.pdf, id=327, 449.68pt x 337.26pt>
 File: ./Results/plots/model9.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model9.pdf>
-<./Results/plots/model9_1.pdf, id=304, 449.68pt x 337.26pt>
+<./Results/plots/model9_1.pdf, id=328, 449.68pt x 337.26pt>
 File: ./Results/plots/model9_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model9_1.pdf>
@@ -1675,32 +1707,32 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[33]
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[34 <./Results/plots/model1.pdf> <./Results/plots/model2.pdf> <./Results/plots/
-model3.pdf>])
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
 [35]
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[36 <./Results/plots/model4.pdf> <./Results/plots/model4_1.pdf> <./Results/plot
+[36 <./Results/plots/model1.pdf> <./Results/plots/model2.pdf> <./Results/plots/
+model3.pdf>])
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[37]
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[38 <./Results/plots/model4.pdf> <./Results/plots/model4_1.pdf> <./Results/plot
 s/model5.pdf> <./Results/plots/model5_1.pdf> <./Results/plots/model6.pdf> <./Re
 sults/plots/model6_1.pdf>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[37 <./Results/plots/model7.pdf> <./Results/plots/model7_1.pdf> <./Results/plot
+[39 <./Results/plots/model7.pdf> <./Results/plots/model7_1.pdf> <./Results/plot
 s/model8.pdf> <./Results/plots/model8_1.pdf> <./Results/plots/model9.pdf> <./Re
-sults/plots/model9_1.pdf>] (./main.bbl [38
+sults/plots/model9_1.pdf>] (./main.bbl [40
 
 
 ]
@@ -1713,12 +1745,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
 \T1/lmr/m/n/10 http://edition.cnn.com/2012/11/07/tech/web/obama-campaign-tech-
  []
 
-[39])
+[41])
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[40]
+[42]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
@@ -1750,7 +1782,7 @@ l.31 \caption
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [41
+) [43
 
 
 
@@ -1762,37 +1794,40 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5456 strings out of 495061
- 72357 string characters out of 1182621
- 152164 words of memory out of 3000000
- 8402 multiletter control sequences out of 15000+50000
+ 5466 strings out of 495061
+ 72495 string characters out of 1182621
+ 152232 words of memory out of 3000000
+ 8411 multiletter control sequences out of 15000+50000
  119540 words of font info for 77 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  41i,13n,36p,281b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx
-7.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
-17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro8.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/symbols/msam7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/symbols/msbm10.pfb>
-Output written on main.pdf (53 pages, 853676 bytes).
+-mathex.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmbx7.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro
+8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (55 pages, 889772 bytes).
 PDF statistics:
- 473 PDF objects out of 1000 (max. 8388607)
+ 504 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

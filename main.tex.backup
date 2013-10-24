@@ -21,6 +21,7 @@
       \DeclareMathOperator{\diag}{diag}
       \DeclareMathOperator{\rank}{rank}
       \newcommand{\x}{\times}
+      \newtheorem{proposition}[theorem]{Proposition}
 %
 
 \author{Abhijith Chandraprabhu}

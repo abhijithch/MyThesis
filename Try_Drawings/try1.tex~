@@ -1,0 +1,18 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{tikzpicture}
+\draw (0,0) rectangle node[label=below:
+Bottom
+] {$m$} +(2,1);
+\draw (0,2) rectangle node[anchor=south] {$m$} +(2,1);
+
+\begin{scope}[xshift=4cm,rotate=-30]
+  \draw (0,0) rectangle node[above] {$m$} +(2,1);
+  \draw (0,2) rectangle node[anchor=south] {$m$} +(2,1);
+\end{scope}
+\end{tikzpicture}
+
+\end{document}

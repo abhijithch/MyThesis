@@ -31,31 +31,32 @@
 \contentsline {subsection}{\numberline {4.1.2}Vector and Matrix Norms}{22}
 \contentsline {subsection}{\numberline {4.1.3}Bases and Rank of Matrix}{22}
 \contentsline {subsection}{\numberline {4.1.4}Least Squares}{23}
-\contentsline {section}{\numberline {4.2}Introduction to Matrix Factorization}{23}
-\contentsline {section}{\numberline {4.3}Matrix approximation using SVD}{24}
-\contentsline {section}{\numberline {4.4}Matrix approximation using Alternating Least Squares}{25}
-\contentsline {subsection}{\numberline {4.4.1}Disadvantage of SVD}{25}
-\contentsline {subsection}{\numberline {4.4.2}Problem formulation w.r.t ALS}{25}
-\contentsline {subsection}{\numberline {4.4.3}Regularized ALS}{26}
-\contentsline {section}{\numberline {4.5}Evaluation Metrics}{27}
-\contentsline {subsection}{\numberline {4.5.1}Mean Average Error}{28}
-\contentsline {subsection}{\numberline {4.5.2}RMSE}{28}
-\contentsline {subsection}{\numberline {4.5.3}Correlation}{28}
-\contentsline {subsection}{\numberline {4.5.4}Precision and Recall}{28}
-\contentsline {subsection}{\numberline {4.5.5}F-Measure}{29}
-\contentsline {chapter}{\numberline {5}Results}{31}
-\contentsline {section}{\numberline {5.1}Overview of Different Models}{31}
-\contentsline {subsubsection}{SVD}{31}
-\contentsline {subsubsection}{ALS-I}{32}
-\contentsline {subsubsection}{ALS-II}{32}
-\contentsline {subsubsection}{$NonTemp_{mu}$}{33}
-\contentsline {subsubsection}{$Temp_{mu}$}{33}
-\contentsline {subsubsection}{$NonTemp_b$}{33}
-\contentsline {subsubsection}{$Temp_b$}{33}
-\contentsline {section}{\numberline {5.2}Results}{33}
-\contentsline {section}{\numberline {5.3}Future Work}{34}
-\contentsline {chapter}{Bibliography}{39}
-\contentsline {chapter}{\numberline {A}Sparse SVD Computation}{41}
-\contentsline {subsubsection}{SVDS}{41}
-\contentsline {subsubsection}{Syntax}{41}
-\contentsline {subsubsection}{Description}{41}
+\contentsline {subsection}{\numberline {4.1.5}Orthogonality}{23}
+\contentsline {section}{\numberline {4.2}Introduction to Matrix Factorization}{24}
+\contentsline {section}{\numberline {4.3}Matrix approximation using SVD}{26}
+\contentsline {section}{\numberline {4.4}Matrix approximation using Alternating Least Squares}{27}
+\contentsline {subsection}{\numberline {4.4.1}Disadvantage of SVD}{27}
+\contentsline {subsection}{\numberline {4.4.2}Problem formulation w.r.t ALS}{27}
+\contentsline {subsection}{\numberline {4.4.3}Regularized ALS}{28}
+\contentsline {section}{\numberline {4.5}Evaluation Metrics}{29}
+\contentsline {subsection}{\numberline {4.5.1}Mean Average Error}{30}
+\contentsline {subsection}{\numberline {4.5.2}RMSE}{30}
+\contentsline {subsection}{\numberline {4.5.3}Correlation}{30}
+\contentsline {subsection}{\numberline {4.5.4}Precision and Recall}{30}
+\contentsline {subsection}{\numberline {4.5.5}F-Measure}{31}
+\contentsline {chapter}{\numberline {5}Results}{33}
+\contentsline {section}{\numberline {5.1}Overview of Different Models}{33}
+\contentsline {subsubsection}{SVD}{33}
+\contentsline {subsubsection}{ALS-I}{34}
+\contentsline {subsubsection}{ALS-II}{34}
+\contentsline {subsubsection}{$NonTemp_{mu}$}{35}
+\contentsline {subsubsection}{$Temp_{mu}$}{35}
+\contentsline {subsubsection}{$NonTemp_b$}{35}
+\contentsline {subsubsection}{$Temp_b$}{35}
+\contentsline {section}{\numberline {5.2}Results}{35}
+\contentsline {section}{\numberline {5.3}Future Work}{36}
+\contentsline {chapter}{Bibliography}{41}
+\contentsline {chapter}{\numberline {A}Sparse SVD Computation}{43}
+\contentsline {subsubsection}{SVDS}{43}
+\contentsline {subsubsection}{Syntax}{43}
+\contentsline {subsubsection}{Description}{43}
