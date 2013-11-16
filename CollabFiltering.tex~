@@ -1,4 +1,4 @@
-\chapter{Collaborative Filtering\index{Collaborative Filtering}}
+ \chapter{Collaborative Filtering\index{Collaborative Filtering}}
 
 
 \textsf{ In this chapter we explain Collaborative Filtering in more detail,
@@ -73,76 +73,12 @@ value(threshold) can be selected for making recommendations. Hence this problem
 can be viewed as a \emph{matrix completion} problem. In this thesis work, we
 will compute the unknowns for a certain subset called the \emph{test set}. \\
 
-Let us denote the completed matrix, or rather the reconstructed matrix by
-\emph{$\hat_{R}$}. We intend to obtain the
+Let us denote the completed matrix, or rather the reconstructed matrix	by 
+l\emph{$\hat_{R}$}. We intend to obtain the
 \emph{$\hat_{R}$}, by reproducing it through a simple product of two matrices
 with reduced \emph{inner dimension}. Let $P\in\mathbb{R}^{u,f}$ and
 $Q\in\mathbb{R}^{f,m}$ are the two matrices with reduced inner dimension
 \emph{f}. 
-
-
-Let us through a very simple example see the principle behind collaborative
-filtering.
-
- \begin{example}
-   We show 4 users who have rated 4 movies, we tabulate the preferences, in the
-form of ratings on the scale of 1 to 5,  as shown below. The users are along the
-rows and items along the columns, rating  given by \textit{user i} to
-\textit{item j} is the real valued entry (i,j) in  the rating matrix.  \\
-
-\begin{tabular}{c|cccc}
-       & Titanic & Braveheart & The Lion King & Dreamcatcher  \\
-\hline
-John   & 5 & 5 & 2 & -   \\
-Dave   & 2 & - & 3 & -   \\
-Alice  & - & 5 & - & 3   \\
-Bob    & 3 & - & - & 5   \\
-\end{tabular}
-
-From the above, we can consider the rating matrix to be \\
-
-$R_{i,j}$ =
-$ \begin{pmatrix}
-  5 & 5 & 2 & ? \\
-  2 & ? & 3 & 5 \\
-  ? & 5 & ? & 3  \\
-  3 & ? & ? & 5
- \end{pmatrix} $\\
- 
- Using matrix factorization, we simply do a SVD on $R$ to get, $U$ and $V$,
-which denote the user space and the movie space. \\
- 
- $U$ =
- $\begin{pmatrix}
-  1.12 & 1.49 & 0.48  \\
-  1.31 & -0.52 & 0.59  \\
-  1.13 & 0.67 & -0.52  \\
-  1.39 & 0.05 & 0.45 
- \end{pmatrix} $
- \hspace*{10mm}
- $V$ =
- $\begin{pmatrix}
-  1.12 & 1.49 & 0.48  \\
-  1.31 & -0.52 & 0.59  \\
-  1.13 & 0.67 & -0.52  \\
-  1.39 & 0.05 & 0.45 
- \end{pmatrix} $\\
-
- Once we have factored the rating matrix $R$, we can get the missing values by
-approximating the sparse rating matrix into a full one,  $\hat{R}=U*V'$ \\
-
-$\hat{R}_{i,j}$ =
- $\begin{pmatrix}
-  4.78 & 4.98 & 1.97 & 3.61 \\
-  1.98 & 1.97 & 2.85 & 4.81 \\
-  2.75 & 4.71 & 1.40 & 2.94  \\
-  2.94 & 3.32 & 2.75 & 4.79
- \end{pmatrix} $\\
- 
- With this approximation, we can make predictions of ratings of movies which the
-users have not seen. 
- 
-\end{example}
 
 \section{NETFLIX}
 Entertainment has been one of the most significant integral part of human
@@ -160,7 +96,9 @@ time.
 movies to choose. They can watch anything they wish, the content is streamed to
 the viewers computer which the user can pause and watch later. NETFLIX provides
 its content throught this method. \\
-This owes to a great extent to the success of NETFLIX, since through on Demand
+\textbf{Netflix, Inc} is a company based in USA, which provides internet
+streaming media on-demand. This owes to a great extent to the success of
+NETFLIX, since through on Demand
 system NETFLIX is able to cater to individual tastes of users. NETFLIX can
 collect statistics pertaining to individual users' choices and the most
 important metric is the \emph{ratings}. NETFLIX aims to greatly improve the
@@ -309,271 +247,171 @@ to adjudge the winner. \cite{Bennett07thenetflix}\\
 \end{center}
 \end{table}
 
+\section{Temporal Dynamics in NETFLIX data}
+The main goal in this work is to integrate temporal information into the
+Recommender System model we are building based on collaborative filtering. It is
+very important to consider temporal dynamics since the vast amounts of data we
+are flooded with is dynamic in nature, and most of the information retrieval
+tools today consider only the snapshot of this data, thereby loosing one very
+potential dimension. In this chapter we present in detail the significance of
+temporal dynamics in general and with respect to NETFLIX and also how to include
+temporal dynamics into the model. \\
 
-\section{Matrix Factorization for Collaborative Filtering}
-With Collaborative Filtering it involves filtering for information through
-collaboration among interacting groups, for example users and movies. Matrix
-factorization happens to be the first choice for collaborative filtering, as
-matrices can hold high dimensional information in tabular form, and can be
-factored into products of smaller matrices. \emph{In matrix factorization the
-users and items are mapped onto a joint latent factor space of reduced dimension
-$f$, and the inner product of the user vector with item vector gives the
-corresponding interaction.} \cite{Koren:2009:MFT:1608565.1608614}
-\subsection{Basic Matrix Factorization}
-Matrix factorization is mainly about a more compact representation of the large
-training data which is obtained by dimensionality reduction.
-\cite{Liu:2010:GLA:1821715.1821722}. 
-\emph{We want to quantify the nature or the characteristics of the movies
-defined by a certain number of aspects (factors), i.e we are trying to
-generalize the information (independent and unrelated ratings matrix) in a
-concise and descriptive way.} \cite{citeulike:4563139} All the movies can be
-described by certain features like overall rating, cast, wether its an action
-flick or romantic drama, how did it fare during the first week of it release
-etc. Similarly a user can also be described based on the same factors, wether
-the user is liberal in rating or very critical, does the user have certain
-favourite cast, if the user prefers action over romance, does the user watch and
-rate movies on the first week of its release etc. What we have here is a common
-factor space in which we tend to generalize the relationships between the users
-and movies, based on these factors. Hence the 8.5 billion ratings can be
-explained in lot fewer factors. We are generalizing the independent individual
-unrelated ratings to a more concise and descriptive form. Here what we have done
-is through meaningful generalities, concised the data, the reverse also holds
-good, i.e by concising the data or in other words by reducing the dimension, we
-can generalize the description of the large data. The Singular Value
-Decomposition exactly helps in achieving this. This is explained crudely with an
-example,\\
+
+Since we are trying to improve the prediction rate by including temporal
+effects, it is very critical to identify and uncover all possible temporal
+effects within the NETFLIX data. This section summarizes and reports the
+temporal analysis of the NETFLIX data.
+
+\section{Tracking Drifting Customer Preferences}
+The phenomena of $Concept drift$ is evident in the case of NETFLIX system, as we
+can see that the user preferences of movies keep changing over time due to
+various reasons. Concept drift means when the statistical properties of the
+target variables change with time, like how user preferences change with new
+release of new movies. In our case where we are trying to collaborate using
+interconnected preferences among users, it is a challenge since each of the
+interacting users could be drifting in different ways and also they are in
+different time instances. There are mainly three kinds of approaches to include
+time apect, \emph{instance selection}, in which only the recent instances are
+considered, discarding off other instances. All instances within a specific time
+period is given equal opportunities discarding instances ouside this period.
+This obviously leads to lose of information.  In 2005, a time-weighted CF method
+was proposed by Ding and Li in \cite{Ding:2005:TWC:1099554.1099689}, in
+which depending on how recent the ratings are they are weighted accordingly,
+these models do include time but only as weighted schemes, this is the second
+approach called \emph{instance weighting}. The third approach is the
+\emph{ensemble learning}, in which predictions from number of models are
+combined to give a final prediction. But in this approach, if each of the
+individual predoctors capture local behaviour, the global patterns are
+overlooked.  A more complex approach was proposed by Koren et al, in
+\cite{Koren:2010:CFT:1721654.1721677}, in
+which the various complex time parameters are incorporated into the model.
+We have built our model based on the following guidelines, \\
+\begin{itemize}
+  \item We try to model for the entire time period, instead of any particular
+instances or particular time periods.
+  \item We try to capture the multiple drifts based on the user, both sudden
+changes and gradual changes.
+  \item All the various drifts will be combined into a single framework.
+\end{itemize}
 
 \begin{example}
-Let us say we have around ten aspects which are used to describe movies and
-users. Each movie has ten numerical values, which exemplifies the ten aspects.
-Similarly the users also have ten such values. We can combine these values to
-obtaing a single rating value for each user-movie pair, bu multiplying the
-corresponding terms and summing them up. Let us consider a movie Die Hard whose
-aspects might be something like, action=1.2, chickflick=-1, and so on. Let us
-consider a user Joe whose aspects are, action=3, and chickflick=-1. So the
-overall rating for the movie Die Hard given by Joe is, $3*1.2+-1*-1+..$ =
-$(3.6+1+..)$. It clearly shows that Joe would evetually like the movie Die
-Hard, which is evident from the high rating value obtained.   
-\end{example}\\
-
- The model in its most basic form is built around the following \\
- $R=P*Q'$
- where $P\in\mathbb{R}^{u,f}$ and $Q\in\mathbb{R}^{i,f}$. The number $f$ is
-decided by trial and error, higher the value better the predictions, however
-beyond certain value it will not contribute to the accuracy significantly. This
-value decides the number of \emph{factors} which will be used to characterize
-users and movies. This is analogous to dimension reduction. \\
-The individual vector in $P$, $p_{u}\in\mathbb{R}^f$ represents an user, it
-gives a measure of the qualities represented by the $f$ factors. Similarly,
-every item is represented by a $q_{i}\in\mathbb{R}^f$ which says about the $f$
-qualities pertaining to the items, i.e movies. We cannot for sure say what are
-the qualities which these factors represent. The task of predicting a rating
-for a user $u$ gives for a movie $i$, can be computed as an inner product, \\
-
-$\hat{r}_{ui}=q_{i}^Tp_{u}.$ \\
-
-This dot product gives the iteraction between the item $i$ and the user $u$. The
-challenge is in the mapping of all the users and items to a joint latent factor
-space of dimensionality $f$ \cite{Koren:2009:MFT:1608565.1608614}.\\
-Singular Value Decomposition (SVD), would be first choice for such a
-factorization, as it helps a great deal in identifying the the best top-most
-factors, i.e by selecting the left and right singular vectors corresponding to
-top $n$ singular values. \\
-
-\subsection{Dimension Reduction}
-Matrix factorization and dimension-reduction go hand-in-hand, the dimension of
-our rating matrix is very high and along with factorizing the matrix it is
-important to reduce the dimensions of the factored matrices. It is the inherent
-property of SVD that we can decide the rank or the number of \emph{factors} we
-need in order to get the best approximation of our User-Movie rating model. By
-dimension reduction we get to express the information which was initially
-presented
-in a matrix of dimension 480189x17770 having around 85 billion ratings in much
-smaller space with only \emph{k} factors, where \emph{k} is the reduced
-dimension.
-While a reduction in dimension, also aids in removal of noise, however too low
-dimension
-can result in removal of useful information as well. Hence it is important to
-decide on an optimal dimension. Through an example below we can further justify
-the
-need for dimension reduction,
-\begin{example}
- Consider movies like "Harry Potter", "Chronicles of Narnia", "Lord of the
-Rings" etc, there are very large number of movies similar to this. By saying
-similar what we mean is that these movies all have certain common factors, like
-they all are fantasy movies, they all are novel based movies. Hence instead of
-retaining all these movies, we can replace them with certain latent factors,
-which are much fewer than the number of items or movies, and hence the dimension
-is reduced.
+ As an example consider two users Joe(21 years old) and John(41 years old)
+rating a common movie Godfather(1972). During November 2008, Godfather was voted
+No. 1 in Empire magazine's list of The 500 Greatest Movies of All Time. Joe
+after seeing this watched the movie and gave his rating. On the other hand John
+had rated the movie 20 years back. This makes them both roughly the same age
+when they have rated the movie, however in a different time instance. It is
+clear that Joes rating could have had certain bias caused by $classical$ nature
+of the movie.
 \end{example}
 
-
-\subsection{Different Models}
-Collaborative Filtering based Recommender Systems are built using either
-Neighbourhood-methods or model-based methods
-\cite{Koren:2008:FMN:1401890.1401944}. Our approach involves the
-model-based method, which has proved to be one of the most effective approach as
-is evident from the NETFLIX Challenge and large number of research articles on
-the same topic. To have a good Recommender System, it is important to achieve
-good accuracy and also to keep the model simple. Keeping this in mind, we try to
-build a model which accounts for significant predictor variables, like the
-temporal dynamics, user-bias, movie-bias etc. However we initially analyze these
-individual predictors and after careful analyses, we blend them together in the
-final model to achieve the best RMSE. The main principle behind our model of
-laten factor modelling, supplemented with the removal of biases pertaining to
-users, movies and temporal variations. Below table shows the various models we
-use, 
-
-\begin{table}
-\centering 
-\begin{tabular}{|c|c|} \hline %\hline
-%-------------------------------------------------------------------
-$Model No.$ & $Model$   \\ 
-\hline
-%-------------------------------------------------------------------
-$ 1$
-& Naive Models based on user/movie means  \\ %\hline
-%-------------------------------------------------------------------
-$ 2$
-& Bias-Model\\ %\hline
-%-------------------------------------------------------------------
-$ 3$
-& Temporal model - SVD  \\ %\hline
-%-------------------------------------------------------------------
-$ 4$
-& Temporal model - ALS  \\ \hline
-%------------------------------------------------------------------- 
-\end{tabular}
-\caption{Different models}
-\label{tab:Models}
-\end{table}
+\section{Temporal Dynamics in NETFLIX Data}
+Here we would show through plots the dynamic nature inherent in the data with
+respect to time. 
 
 
-\subsubsection{Data Representation}
-Before beginning discussion on the models, we show a detailed representation of
-the training and the test data which are used in this work, which are in the
-form of matrices, i.e, the rating matrix $R$, the date matrix $D$,
-these comprise the training data. The test data is in the form of three
-matrices, probe set $P_{probe}$, test set $Q_{test}$, quiz set
-$Q_{quiz}$ and finally $Q_{all}$ which consists of the entire test
-data. Each of the above matrices except $D$ are in the form,  \\
-$\mathcal{R} = \{r_{ij} \exists \mbox{ in } R \mid \mbox{user } i \in
-\mathcal{U} \mbox{ have rated movie } j \in \mathcal{M} \}$, \\
-where $r_{ij}$ is the rating for the corresponding user-movie pair and is also
-the $(i,j)^{th}$ entry in their respective matrices. The matrix $D$ however
-has the same structure of $R$, but with the date of rating instead of the
-rating itself.
+\begin{figure}[h]
+\centering
+\subfigure[Movie Means by Date]{
+\includegraphics[width=0.45\textwidth]{./New/MovieMeans_AllMovie.pdf}
+\label{fig:MovMean}
+}
+\subfigure[Movie Means by Movie Age]{
+\includegraphics[width=0.45\textwidth]{./New/MovieMeans_AllMovie_Age.pdf}
+\label{fig:MovMean_Age}
+}\\
 
-\subsubsection{Basic Naive model} We start by doing some rating predictions
-based on the average of all the ratings in the $R$ matrix, which is 3.5769. We
-simply use this value for any unknown user-movie combination. Moving ahead we
-could use the \emph{user-mean}, to calculate the unknown rating, for example if
-we need a prediction for user $u$, for any of the movies we simply use the
-average of all the ratings given by user $u$. Similarly to predict the unknown
-rating for some movie $i$, we could simply use the average rating of that movie
-over all the known ratings given to that movie in the matrix $R$.  
-\subsubsection{Bias model} Moving ahead we try out new models which takes care
-of the inherent biases of various kinds in the data. Bias model removes the
-anomalies, if any in the data. Biases in this cintext can be considered to be
-variations in the ratings which are caused by certain effects associated with
-the users or movies, independetly of the interaction between the two groups.
-The interaction is captured in the factorization part and the inner products of
-the interacting vectors. The main purpose of doing this is, by separating the
-interaction and the biases will help us in subjecting only the interaction
-portion of the data which is more critical
-\cite{Koren:2010:CFT:1721654.1721677}.
-The $Baseline predictors$ capture these biases which do not involve user-movie
-interaction. While factorization these biases are removed only to be added after
-factorization, i.e, post-processing. 
-\subsubsection{Temporal Bias + SVD model} The main objective in this thesis is
-to capture the temporal dynamics within the data and include them into the
-$baseline predictors$ through two major temporal effects, each involving users
-and movies. However in this thesis the temporal effects related only to movies
-is considered. We have considered the movie-bias to be a function of time, which
-can capture the changes in popularity of movies in course of time, owing to
-number of external triggering factors like the actor in the movie winning a
-major award. Also the users tend to drift with their rating styles with time,
-for example a liberal user might for some reason become a more critical in
-rating movies. \\
- This model uses the good old Singular Value Decomposition for the factorizing
-the rating matrix. But however it is evident that owing to the sparsity in the
-data SVD proves to be not very effective. To avoid this imputation can be
-employed but this can be very expensive in terms of memory. 
-\subsubsection{Temporal Bias + ALS model} Owing to the disadvantage of the SVD
-as will be explained in future chapters, we employ an alternative method in
-Alternating Least Squares. It is an iterative method with initial guessed
-values for $M$ and alternatively solving for $U$ and $M$ until convergence. This
-method is computationally demanding but can be parallelized easily. If $R$ is
-the rating matrix, we formulate a low-rank matrix approximation problem as shown
-below,
-\begin{equation}
- (U,M)=arg \min_{U,M} \mathcal{L}^{\emph{emp}}(R,U,M)
-\end{equation}
-where $U$ and $M$ $\in \mathbb{R}$ and have $n_f$ columns. The symbolic
-representation of the problem is shown below,
-
-
-The $x^s$ denote the known ratings in the matrix $R$ and $\in \emph{I}$, where
-\emph{I} is the known ratings set and $n$ is the number of known ratings in
-total. In general the problem is of the type, 
-\begin{equation}
- \|{Ax-b}\|
- \label{eq:OLS}
-\end{equation}
-\begin{equation}
- \|{R-UM^T}\|
- \label{eq:ALS}
-\end{equation}
-where we are trying to minimize the above in Frobenius norm, which is matrix
-equivalent of 2-norm. We wish to solve the above problem in a least squares
-sense, but since it is not in the form of ordinary least squares(OLS). We try to
-convert the type shown in Equation ~\ref{eq:ALS} to the type shown in Equation
-~\ref{eq:OLS}.
-\begin{figure}[h!]
-\includegraphics[width=1\textwidth]{ALS_FIG.pdf}
-
-\caption{ALS Decomposition}
-\label{fig:ALS Decomposition}
-\end{figure}
-
-
-Let us consider the first row of $R$, which will have all the ratings
-given by the fist user. Let us assume the user has seen movies 1, 213, 315,
-1744, 2133, 7044, 9012, 12344 and 16890  so in a total of 9 movies. Forming a
-vector of the known ratings for the first user we have $\begin{bmatrix}
-                                          1 & 213 & 315 & 1744 & 2133 & 7044 &
-9012 & 12344 & 16890                                    
-                                          \end{bmatrix}
-$, let
-this be denoted by $b$. We initialize the $M$ matrix in a particular way, and as
-shown in the Figure 2.1 it has $n_m$ rows and $n_f$ columns. The matrix $U$ has
-$n_u$ rows and $n_f$ columns. For the case of the first user we can form a
-sub-matrix of $M$, denote this by $M_u$. This matrix $M_u$ will have all the
-rows from $M$ corresponding to the movies seen by the user $u$, the first user
-in this case. Let $\boldmath{u}$ be the row vector from $U$ corresponding to the
-considered user, .i.e, first user. Now we have three components $R(1,:)$, the
-row vector having the nine ratings of the nine movies seen by user 1, $u_1$ the
-unknown first row of $U$ matrix, $M_u$, a submatrix of $M$ consisting of the
-rows corresponding to the movies rated by the user 1. Figure 2.2 shows the
-symbolic representation of this single ordinary least squares problem
-formulation, $ \|{M_uu-R(1,:)}\|$. This is done for all the users to obtain the
-$U$ matrix. Next this $U$ matrix is used to estimate the new $M$ matrix. The $U$
-and $M$ are estimated alternatively until some convergence criteria is
-satisfied. 
-
-
-\begin{figure}[h!]
-
-\includegraphics[width=0.6\textwidth]{ALS_FIG2.pdf}
-\caption{OLS }
-\label{fig:OLS Decomposition}
+\label{fig:MovieMean_temporal}
+\caption{Movie Means vs Time}
 \end{figure}
 
 
 
+\section{Temporal-Factor Model}
+As we had seen in the previous chapter, that all the non user-item interaction
+effects are encapsulated in the \emph{Baseline predictors}, we will show here
+who we intend to include temporal baseline predictors. Here we explain the
+theoretical analyses and findings related to various time changing aspects of
+users and of movies. It is clear that the time dynamics of movies will be more
+gradual than that of the users. The movies are analysed based on a large number
+of users who have rated the single movie, but however as an individual user the
+temporal analyses is done on large number of unrelated factors, hence the user
+behaviour seems more complex and less uniform compared to the movies. \\
+The main challenge is to parameterize the user-drift and the movie-drift as
+appropriately as possible. The first and foremost consideration is how
+transitory are the user-drift and the movie-drift. As we will expalin in detail
+the movie-drift seems to be more uniform and less transient than the user-drift,
+hence it is wise to consider finer time resolution to model user-drift and
+coarser resolution for movies. The final model should however account for both
+temporal effects spanning on a longer duration and the more transitory changes. 
+For example, movies dont change on a daily basis, some of the factors which
+could affect the movies dont occur often like appearance of an actor in another
+movie, or the movie winning an award or the movie recieving appreciation from a
+critique. On the contrary consider an user, who usually rates relative to other
+ratings, so his rating scale could vary everytime he has seen on influencing
+movie proir to the current movie of interest. A user who usually rate 4 for
+average movies, could be influenced to rate the same kind of average movies by
+3. \\
 
+\begin{figure}[h!]
+\centering
+\subfigure[Monthly Average of All movies]{
+\includegraphics[width=0.45\textwidth]{./New/MonthlyAve_AllMovies.pdf}
+\label{fig:MonthlyAllMov}
+}
+\subfigure[Weekly Average of all movies]{
+\includegraphics[width=0.45\textwidth]{./New/WeeklyAve_AllMovies.pdf}
+\label{fig:WeeklyAllMov}
+}\\
 
+\subfigure[Monthly Average of movie 129]{
+\includegraphics[width=0.45\textwidth]{./New/MonthlyAve_M129.pdf}
+\label{fig:MonthlyM129}
+}
+\subfigure[Weekly Average of movie 129]{
+\includegraphics[width=0.45\textwidth]{./New/WeeklyAve_M129.pdf}
+\label{fig:WeeklyM1476}
+}\\
 
+\subfigure[Monthly Average of movie 1476]{
+\includegraphics[width=0.45\textwidth]{./New/MonthlyAve_M1476.pdf}
+\label{fig:MonthlyM129}
+}
+\subfigure[Weekly Average of movie 1476]{
+\includegraphics[width=0.45\textwidth]{./New/WeeklyAve_M1476.pdf}
+\label{fig:WeeklyM1476}
+}\\
 
+\label{fig:MonthlyWeeklyAverages}
+\caption{Monthly and Weekly Averages}
+\end{figure}
+
+We begun by experimenting for different time periods called \emph{bins} in order
+to catch the movie-drifts.  The whole time period spans over 300 weeks, and
+after several rounds of testing a 10 week period was chosen as the optimal bin
+length. Hence a total of 30 bins suffice to span the entire data. With each bin
+we associate it with a bias(transient part), which is simply the difference
+between the overall movie mean and the mean of the movie for that bin period.
+Interpolation is done for bins where there are no ratings. Each rating instance
+of a movie in the training data is associated with a bin value between 1 and 30.
+Hence the movie bias would have two components a stationary part, $b_{i}$ and a
+transient part $b_{i,Bin(t)}$ \cite{Koren:2010:CFT:1721654.1721677}. \\
+
+\begin{equation} 
+ b_{i}(t)=b_{i}+b_{i,Bin(t)}
+\end{equation}
+
+We have in this thesis work considered only movie related temporal dynamics,
+however we would comment on a possible approach to capture temporal dynamics
+related to the more complicated user bias. In case users we need to parameterize
+for both long term and short term changes. A simple linear function could be
+used to capture the gradual user-bias drift. Each user will have an average
+rating date, and for every rating instances of this user the deviation could be
+a function of the difference of the dates. Regarding sudden drifts, we need to
+capture the drift on daily basis. The minimum step length could be larger than a
+day also. In the NETFLIX data the user on an average rates on 40 different days,
+hence we need 40 different paramaters for every user on an average. These two
+factors could model the temporal dynamics of the users.  
 
 

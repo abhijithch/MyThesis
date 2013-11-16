@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.12.5)  23 OCT 2013 17:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.12.5)  7 NOV 2013 00:59
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -359,15 +359,15 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip59
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (./main.aux (./introduction.aux) (./CollabFiltering.aux)
-(./TemporalDynamics.aux
+) (./main.aux (./introduction.aux) (./CollabFiltering.aux
 
 LaTeX Warning: Label `fig:MonthlyM129' multiply defined.
 
 
 LaTeX Warning: Label `fig:WeeklyM1476' multiply defined.
 
-) (./MathematicalBackground.aux) (./ImplementationResults.aux
+) (./MathematicalBackground.aux) (./PredictionModels.aux)
+(./ImplementationResults.aux
 
 LaTeX Warning: Label `fig:Model 1' multiply defined.
 
@@ -413,19 +413,19 @@ LaTeX Warning: Label `fig:RMSE SVD' multiply defined.
 ) (./appendix.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 87.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -483,42 +483,42 @@ driver: pdftex
 \@twosidetrue \@mparswitchtrue 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package crop Info: requested driver: `' on input line 75.
-Package crop Info: detected driver: `pdftex' on input line 75.
-Package crop Info: using `pdftex' graphics driver on input line 75.
+Package crop Info: requested driver: `' on input line 87.
+Package crop Info: detected driver: `pdftex' on input line 87.
+Package crop Info: using `pdftex' graphics driver on input line 87.
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 78.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 90.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 78.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 90.
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 78.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 90.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 78.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 90.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 78.
+(Font)              <10> on input line 90.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 78.
+(Font)              <7> on input line 90.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 78.
-LaTeX Font Info:    Try loading font information for U+msa on input line 78.
+(Font)              <5> on input line 90.
+LaTeX Font Info:    Try loading font information for U+msa on input line 90.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 78.
+LaTeX Font Info:    Try loading font information for U+msb on input line 90.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -526,7 +526,7 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 <LiTH_staende_sv.pdf, id=1, 260.975pt x 190.7125pt>
 File: LiTH_staende_sv.pdf Graphic file (type pdf)
  <use LiTH_staende_sv.pdf>
-Overfull \hbox (34.91695pt too wide) in paragraph at lines 78--78
+Overfull \hbox (34.91695pt too wide) in paragraph at lines 90--90
 []| [] 
  []
 
@@ -536,7 +536,7 @@ Overfull \hbox (34.91695pt too wide) in paragraph at lines 78--78
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./LiTH_staende_sv.pdf>] [0
 
 ]
-Overfull \hbox (34.91695pt too wide) in paragraph at lines 78--78
+Overfull \hbox (34.91695pt too wide) in paragraph at lines 90--90
 []| [] 
  []
 
@@ -550,7 +550,7 @@ Overfull \hbox (34.91695pt too wide) in paragraph at lines 78--78
 File: LiTH_sigill_sv.pdf Graphic file (type pdf)
 
 <use LiTH_sigill_sv.pdf>
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 78.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 90.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [3
@@ -621,8 +621,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--75
 ! Missing { inserted.
 <to be read again> 
                    $
-l.77 \emph{$\hat_{R}$}
-                      . We intend to obtain the
+l.77 l\emph{$\hat_{R}$}
+                       . We intend to obtain the
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
@@ -631,8 +631,8 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.77 \emph{$\hat_{R}$}
-                      . We intend to obtain the
+l.77 l\emph{$\hat_{R}$}
+                       . We intend to obtain the
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -642,8 +642,8 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <to be read again> 
                    }
-l.77 \emph{$\hat_{R}$}
-                      . We intend to obtain the
+l.77 l\emph{$\hat_{R}$}
+                       . We intend to obtain the
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
@@ -652,8 +652,8 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.77 \emph{$\hat_{R}$}
-                      . We intend to obtain the
+l.77 l\emph{$\hat_{R}$}
+                       . We intend to obtain the
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -703,7 +703,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+Underfull \hbox (badness 10000) in paragraph at lines 84--89
 
  []
 
@@ -713,39 +713,21 @@ $[]$
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Overfull \hbox (10.327pt too wide) in paragraph at lines 134--200
+ [][] 
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 200.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 200.
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--130
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--141
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--153
-
- []
+Underfull \vbox (badness 3657) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -753,30 +735,16 @@ $[]$
  []
 
 [5]
-Overfull \hbox (10.327pt too wide) in paragraph at lines 196--262
- [][] 
- []
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 262.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 262.
-
-Underfull \hbox (badness 10000) in paragraph at lines 267--275
+Underfull \hbox (badness 10000) in paragraph at lines 214--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--291
+Underfull \hbox (badness 10000) in paragraph at lines 251--259
 
  []
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -784,123 +752,30 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 267--290
+
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 323--345
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 291.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
-
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 359--372
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 375--382
-
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[9]
-Overfull \hbox (34.45113pt too wide) in paragraph at lines 412--426
-\T1/lmr/m/n/10 Collaborative Fil-ter-ing based Rec-om-mender Sys-tems are built
- us-ing ei-ther Neighbourhood-
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[10]
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[11]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./ALS_FIG.pdf): PDF inclusion: found PD
-F version <1.5>, but at most version <1.4> allowed
-<ALS_FIG.pdf, id=103, 835.41315pt x 368.32182pt>
-File: ALS_FIG.pdf Graphic file (type pdf)
- <use ALS_FIG.pdf>
-
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 553.
-
-
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 553
-.
-
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./ALS_FIG2.pdf): PDF inclusion: found P
-DF version <1.5>, but at most version <1.4> allowed
-<ALS_FIG2.pdf, id=105, 445.41226pt x 196.35286pt>
-File: ALS_FIG2.pdf Graphic file (type pdf)
- <use ALS_FIG2.pdf>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[12 <./ALS_FIG.pdf>]
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[13 <./ALS_FIG2.pdf>]
-\openout2 = `TemporalDynamics.aux'.
-
- (./TemporalDynamics.tex [14
-
-
-
-]
-Chapter 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--48
-
- []
-
-[15]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 49.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 49.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 291.
 
-<./New/MovieMeans_AllMovie.pdf, id=200, 411.5375pt x 308.15125pt>
+<./New/MovieMeans_AllMovie.pdf, id=89, 411.5375pt x 308.15125pt>
 File: ./New/MovieMeans_AllMovie.pdf Graphic file (type pdf)
 
 <use ./New/MovieMeans_AllMovie.pdf>
-<./New/MovieMeans_AllMovie_Age.pdf, id=201, 411.5375pt x 308.15125pt>
+<./New/MovieMeans_AllMovie_Age.pdf, id=90, 411.5375pt x 308.15125pt>
 File: ./New/MovieMeans_AllMovie_Age.pdf Graphic file (type pdf)
 
 <use ./New/MovieMeans_AllMovie_Age.pdf>
@@ -908,7 +783,7 @@ File: ./New/MovieMeans_AllMovie_Age.pdf Graphic file (type pdf)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--114
+Underfull \hbox (badness 10000) in paragraph at lines 332--356
 
  []
 
@@ -917,27 +792,27 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[16] <./New/MonthlyAve_AllMovies.pdf, id=205, 449.68pt x 337.26pt>
+[8] <./New/MonthlyAve_AllMovies.pdf, id=94, 449.68pt x 337.26pt>
 File: ./New/MonthlyAve_AllMovies.pdf Graphic file (type pdf)
 
 <use ./New/MonthlyAve_AllMovies.pdf>
-<./New/WeeklyAve_AllMovies.pdf, id=206, 449.68pt x 337.26pt>
+<./New/WeeklyAve_AllMovies.pdf, id=95, 449.68pt x 337.26pt>
 File: ./New/WeeklyAve_AllMovies.pdf Graphic file (type pdf)
 
 <use ./New/WeeklyAve_AllMovies.pdf>
-<./New/MonthlyAve_M129.pdf, id=207, 449.68pt x 337.26pt>
+<./New/MonthlyAve_M129.pdf, id=96, 449.68pt x 337.26pt>
 File: ./New/MonthlyAve_M129.pdf Graphic file (type pdf)
 
 <use ./New/MonthlyAve_M129.pdf>
-<./New/WeeklyAve_M129.pdf, id=208, 449.68pt x 337.26pt>
+<./New/WeeklyAve_M129.pdf, id=97, 449.68pt x 337.26pt>
 File: ./New/WeeklyAve_M129.pdf Graphic file (type pdf)
 
 <use ./New/WeeklyAve_M129.pdf>
-<./New/MonthlyAve_M1476.pdf, id=209, 449.68pt x 337.26pt>
+<./New/MonthlyAve_M1476.pdf, id=98, 449.68pt x 337.26pt>
 File: ./New/MonthlyAve_M1476.pdf Graphic file (type pdf)
 
 <use ./New/MonthlyAve_M1476.pdf>
-<./New/WeeklyAve_M1476.pdf, id=210, 449.68pt x 337.26pt>
+<./New/WeeklyAve_M1476.pdf, id=99, 449.68pt x 337.26pt>
 File: ./New/WeeklyAve_M1476.pdf Graphic file (type pdf)
 
 <use ./New/WeeklyAve_M1476.pdf>
@@ -945,49 +820,46 @@ File: ./New/WeeklyAve_M1476.pdf Graphic file (type pdf)
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--158
+Underfull \hbox (badness 10000) in paragraph at lines 390--400
 
  []
-
-
-Underfull \vbox (badness 1694) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[17 <./New/MovieMeans_AllMovie.pdf> <./New/MovieMeans_AllMovie_Age.pdf>]
+[9 <./New/MovieMeans_AllMovie.pdf> <./New/MovieMeans_AllMovie_Age.pdf>]
 
-LaTeX Warning: Text page 18 contains only floats.
+LaTeX Warning: Text page 10 contains only floats.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[18 <./New/MonthlyAve_AllMovies.pdf> <./New/WeeklyAve_AllMovies.pdf> <./New/Mon
+[10 <./New/MonthlyAve_AllMovies.pdf> <./New/WeeklyAve_AllMovies.pdf> <./New/Mon
 thlyAve_M129.pdf> <./New/WeeklyAve_M129.pdf> <./New/MonthlyAve_M1476.pdf> <./Ne
 w/WeeklyAve_M1476.pdf>])
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[19]
+[11]
 \openout2 = `MathematicalBackground.aux'.
 
- (./MathematicalBackground.tex [20
+ (./MathematicalBackground.tex [12
 
 
 
 ]
-Chapter 4.
-[21]
+Chapter 3.
+[13]
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[22]
+[14]
 ! Undefined control sequence.
 l.130 ...orthogonal, i.e., $q_i^Tq_j=0$, i\unequal
                                                    j. Then the
@@ -1002,29 +874,108 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[23] <QR_Fig.pdf, id=259, 445.64793pt x 376.7395pt>
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 156--170
+
+ []
+
+
+Overfull \hbox (3.14503pt too wide) in paragraph at lines 200--204
+[]\T1/lmr/m/n/10 We shall cre-ate a \T1/lmr/m/sl/10 Term-document ma-trix\T1/lm
+r/m/n/10 , with the doc-u-ments along the columns
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--204
+
+ []
+
+<QR_Fig.pdf, id=149, 445.64793pt x 376.7395pt>
 File: QR_Fig.pdf Graphic file (type pdf)
  <use QR_Fig.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.221   \end{pmatrix} $ \in
+                            \mathbb{R}^{6 \times 5}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.224   $\begin{pmatrix}
+                        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.231  \end{pmatrix}
+                     $ \in \mathbb{R}^{6}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.232 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 205--212
+[16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[17 <./QR_Fig.pdf>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[18]
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[19]
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[20]
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 594--601
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 607--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 619--620
 
  []
 
@@ -1033,57 +984,55 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[25 <./QR_Fig.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 635--641
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--251
+Underfull \hbox (badness 10000) in paragraph at lines 643--644
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
-
- []
-
-
-Overfull \hbox (14.98158pt too wide) in paragraph at lines 255--257
+Overfull \hbox (14.98158pt too wide) in paragraph at lines 645--647
 []\T1/lmr/m/sl/10 For a ma-trix A $\OMS/lmsy/m/n/10 2 \U/msb/m/n/10 R[]$\T1/lmr
 /m/sl/10 , with $\OML/lmm/m/it/10 rank\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 A\OT1/l
 mr/m/n/10 ) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--257
+Underfull \hbox (badness 10000) in paragraph at lines 645--647
 
  []
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[26]
-Overfull \hbox (3.81256pt too wide) in paragraph at lines 274--274
+Overfull \hbox (3.81256pt too wide) in paragraph at lines 665--665
 []\T1/lmr/bx/n/14.4 Matrix ap-prox-i-ma-tion us-ing Al-ter-nat-ing Least
  []
 
 
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[23] <ALS_FIG.pdf, id=192, 424.3082pt x 203.14998pt>
+File: ALS_FIG.pdf Graphic file (type pdf)
+ <use ALS_FIG.pdf>
+
 Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
-d on input line 292.
+d on input line 695.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[27]
+[24 <./ALS_FIG.pdf>]
 ! Undefined control sequence.
 <argument> ...^T\bold {m}_j-r_{ij})m_{kj}+\lambds 
                                                   n_{u_{i}}u_{ki}=0, & \fora...
-l.366   \end{align}
+l.769   \end{align}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1094,7 +1043,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...^T\bold {m}_j-r_{ij})m_{kj}+\lambds 
                                                   n_{u_{i}}u_{ki}=0, & \fora...
-l.366   \end{align}
+l.769   \end{align}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1103,15 +1052,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \vbox (badness 3189) has occurred while \output is active []
-
-
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 371--374
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 774--777
 
  []
 
@@ -1123,29 +1069,457 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[29])
+[26])
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[27]
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[28]
+\openout2 = `PredictionModels.aux'.
+
+ (./PredictionModels.tex
+Chapter 4.
+[29
+
+
+
+]
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
 [30]
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
+
+ []
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \caption
+              {Dimension Reduction Algorithm}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
 [31]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.187 \begin{array}{ccc}
+                        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.206 \end{array}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (34.45113pt too wide) in paragraph at lines 210--224
+\T1/lmr/m/n/10 Collaborative Fil-ter-ing based Rec-om-mender Sys-tems are built
+ us-ing ei-ther Neighbourhood-
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 253--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--276
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.349 The values of $R$ are \{$r_{mn}$:1 \leq
+                                              $r_{mn}$ \leq 5 | $r_{mn}$ is an
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.349 The values of $R$ are \{$r_{mn}$:1 \leq $r_
+                                                 {mn}$ \leq 5 | $r_{mn}$ is an
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.349 ...f $R$ are \{$r_{mn}$:1 \leq $r_{mn}$ \leq
+                                                   5 | $r_{mn}$ is an
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.349 ...e \{$r_{mn}$:1 \leq $r_{mn}$ \leq 5 | $r_
+                                                  {mn}$ is an
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.351 the values of $D$ are \{$d_{mn}$:1 \leq
+                                              $d_{mn}$ \leq 2243 | $d_{mn}$ ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.351 the values of $D$ are \{$d_{mn}$:1 \leq $d_
+                                                 {mn}$ \leq 2243 | $d_{mn}$ ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.351 ...f $D$ are \{$d_{mn}$:1 \leq $d_{mn}$ \leq
+                                                   2243 | $d_{mn}$ is an
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.351 ...{$d_{mn}$:1 \leq $d_{mn}$ \leq 2243 | $d_
+                                                  {mn}$ is an
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[33]
+
+! Package array Error:  Illegal pream-token (]): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.372  \begin{array}{l|c]}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.394 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.394 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.395 \]
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.395 \]
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.395 \]
+        
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.405 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.405 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.406 \]
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.406 \]
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.406 \]
+        
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.416 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.416 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.417 \]
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.417 \]
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.417 \]
+        
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[34] <UserMovie_Interaction.pdf, id=238, 360.86418pt x 203.35172pt>
+File: UserMovie_Interaction.pdf Graphic file (type pdf)
+
+<use UserMovie_Interaction.pdf>
+! Misplaced alignment tab character &.
+l.448  x_{ui}=r_{ui}-b_{ui} &
+                              \hspace{2cm} & \forall u \in \mathcal{U}, i \in
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.448  x_{ui}=r_{ui}-b_{ui} & \hspace{2cm} &
+                                             \forall u \in \mathcal{U}, i \in
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--458
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--466
+
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[35 <./UserMovie_Interaction.pdf>]
+! Missing } inserted.
+<inserted text> 
+                }
+l.507 where $b_{i,Bin(t)$
+                          is the difference between the overall mean $\mu$ a...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.518 \caption
+              {Temporal Bias - SVD Algorithm}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Misplaced alignment tab character &.
+l.524 ...89, $n$=17770 \Comment Dimension of $R$ &
+                                                   $D$
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[36]
+! Missing } inserted.
+<inserted text> 
+                }
+l.541 ...ate $x_{ui}=r_{ui}-(b_u+b_i+b_{i,Bin(t))$
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<ALS_FIG1.pdf, id=260, 350.01064pt x 180.58566pt>
+File: ALS_FIG1.pdf Graphic file (type pdf)
+ <use ALS_FIG1.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 605.
+
+
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 605
+.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[37] <ALS_FIG2.pdf, id=267, 232.33098pt x 91.95354pt>
+File: ALS_FIG2.pdf Graphic file (type pdf)
+ <use ALS_FIG2.pdf>)
+Underfull \hbox (badness 10000) has occurred while \output is active
+$[]$
+ []
+
+[38 <./ALS_FIG1.pdf> <./ALS_FIG2.pdf>]
 \openout2 = `ImplementationResults.aux'.
 
- (./ImplementationResults.tex [32
+ (./ImplementationResults.tex
+Chapter 5.
+
+Underfull \vbox (badness 2753) has occurred while \output is active []
+
+ [39
 
 
 
 ]
-Chapter 5.
-
-Underfull \vbox (badness 1264) has occurred while \output is active []
-
- [33]
 
 ! LaTeX Error: \caption outside float.
 
@@ -1153,549 +1527,87 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \caption
-             {SVD technique}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 \caption
+l.78 \caption
              {SVD Initialization of M}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   I
-l.107 \end{align*}
-                  
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
 
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.107 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
 
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   r
-l.107 \end{align*}
-                  
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.107 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   W
-l.107 \end{align*}
-                  
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.107 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   N
-l.107 \end{align*}
-                  
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.107 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   R
-l.107 \end{align*}
-                  
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.107 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   I
-l.107 \end{align*}
-                  
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.107 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   r
-l.107 \end{align*}
-                  
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.107 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   W
-l.107 \end{align*}
-                  
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.107 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   N
-l.107 \end{align*}
-                  
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.107 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   R
-l.107 \end{align*}
-                  
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.107 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+ []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
-
- []
-
-<./Results/plots/model1.pdf, id=314, 449.68pt x 337.26pt>
+[40] <./Results/plots/model1.pdf, id=309, 449.68pt x 337.26pt>
 File: ./Results/plots/model1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model1.pdf>
-<./Results/plots/model2.pdf, id=315, 449.68pt x 337.26pt>
+<./Results/plots/model2.pdf, id=310, 449.68pt x 337.26pt>
 File: ./Results/plots/model2.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model2.pdf>
-<./Results/plots/model3.pdf, id=316, 449.68pt x 337.26pt>
+<./Results/plots/model3.pdf, id=311, 449.68pt x 337.26pt>
 File: ./Results/plots/model3.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model3.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Results/plots/model4.pdf, id=317, 449.68pt x 337.26pt>
+<./Results/plots/model4.pdf, id=312, 449.68pt x 337.26pt>
 File: ./Results/plots/model4.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model4.pdf>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 173.
+(Font)              <8> on input line 159.
 
-<./Results/plots/model4_1.pdf, id=318, 449.68pt x 337.26pt>
+<./Results/plots/model4_1.pdf, id=313, 449.68pt x 337.26pt>
 File: ./Results/plots/model4_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model4_1.pdf>
-<./Results/plots/model5.pdf, id=319, 449.68pt x 337.26pt>
+<./Results/plots/model5.pdf, id=314, 449.68pt x 337.26pt>
 File: ./Results/plots/model5.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model5.pdf>
-<./Results/plots/model5_1.pdf, id=320, 449.68pt x 337.26pt>
+<./Results/plots/model5_1.pdf, id=315, 449.68pt x 337.26pt>
 File: ./Results/plots/model5_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model5_1.pdf>
-<./Results/plots/model6.pdf, id=321, 449.68pt x 337.26pt>
+<./Results/plots/model6.pdf, id=316, 449.68pt x 337.26pt>
 File: ./Results/plots/model6.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model6.pdf>
-<./Results/plots/model6_1.pdf, id=322, 449.68pt x 337.26pt>
+<./Results/plots/model6_1.pdf, id=317, 449.68pt x 337.26pt>
 File: ./Results/plots/model6_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model6_1.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Results/plots/model7.pdf, id=323, 449.68pt x 337.26pt>
+<./Results/plots/model7.pdf, id=318, 449.68pt x 337.26pt>
 File: ./Results/plots/model7.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model7.pdf>
-<./Results/plots/model7_1.pdf, id=324, 449.68pt x 337.26pt>
+<./Results/plots/model7_1.pdf, id=319, 449.68pt x 337.26pt>
 File: ./Results/plots/model7_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model7_1.pdf>
-<./Results/plots/model8.pdf, id=325, 449.68pt x 337.26pt>
+<./Results/plots/model8.pdf, id=320, 449.68pt x 337.26pt>
 File: ./Results/plots/model8.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model8.pdf>
-<./Results/plots/model8_1.pdf, id=326, 449.68pt x 337.26pt>
+<./Results/plots/model8_1.pdf, id=321, 449.68pt x 337.26pt>
 File: ./Results/plots/model8_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model8_1.pdf>
-<./Results/plots/model9.pdf, id=327, 449.68pt x 337.26pt>
+<./Results/plots/model9.pdf, id=322, 449.68pt x 337.26pt>
 File: ./Results/plots/model9.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model9.pdf>
-<./Results/plots/model9_1.pdf, id=328, 449.68pt x 337.26pt>
+<./Results/plots/model9_1.pdf, id=323, 449.68pt x 337.26pt>
 File: ./Results/plots/model9_1.pdf Graphic file (type pdf)
 
 <use ./Results/plots/model9_1.pdf>
@@ -1707,35 +1619,27 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[35]
+[41])
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[36 <./Results/plots/model1.pdf> <./Results/plots/model2.pdf> <./Results/plots/
-model3.pdf>])
+[42 <./Results/plots/model1.pdf> <./Results/plots/model2.pdf> <./Results/plots/
+model3.pdf>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[37]
-Underfull \hbox (badness 10000) has occurred while \output is active
-$[]$
- []
-
-[38 <./Results/plots/model4.pdf> <./Results/plots/model4_1.pdf> <./Results/plot
+[43 <./Results/plots/model4.pdf> <./Results/plots/model4_1.pdf> <./Results/plot
 s/model5.pdf> <./Results/plots/model5_1.pdf> <./Results/plots/model6.pdf> <./Re
 sults/plots/model6_1.pdf>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[39 <./Results/plots/model7.pdf> <./Results/plots/model7_1.pdf> <./Results/plot
+[44 <./Results/plots/model7.pdf> <./Results/plots/model7_1.pdf> <./Results/plot
 s/model8.pdf> <./Results/plots/model8_1.pdf> <./Results/plots/model9.pdf> <./Re
-sults/plots/model9_1.pdf>] (./main.bbl [40
-
-
-]
+sults/plots/model9_1.pdf>] (./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 []\T1/lmr/m/n/10 How obama's data crunch-ers helped him win,
  []
@@ -1745,12 +1649,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
 \T1/lmr/m/n/10 http://edition.cnn.com/2012/11/07/tech/web/obama-campaign-tech-
  []
 
-[41])
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 Michael~W. Berry, Zlatko Drmač
+                                    , Elizabeth, and R.~Jessup.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+[45
+
+
+])
 Underfull \hbox (badness 10000) has occurred while \output is active
 $[]$
  []
 
-[42]
+[46]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
@@ -1782,52 +1702,55 @@ l.31 \caption
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [43
+) [47
 
 
 
 ] (./main.aux (./introduction.aux) (./CollabFiltering.aux)
-(./TemporalDynamics.aux) (./MathematicalBackground.aux)
+(./MathematicalBackground.aux) (./PredictionModels.aux)
 (./ImplementationResults.aux) (./appendix.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5466 strings out of 495061
- 72495 string characters out of 1182621
- 152232 words of memory out of 3000000
- 8411 multiletter control sequences out of 15000+50000
+ 5498 strings out of 495061
+ 73059 string characters out of 1182621
+ 156993 words of memory out of 3000000
+ 8441 multiletter control sequences out of 15000+50000
  119540 words of font info for 77 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 41i,13n,36p,281b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,16n,36p,281b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/font
-s/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmbx7.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro
-8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/font
-s/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (55 pages, 889772 bytes).
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmbx7.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lme
+x10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmro8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (59 pages, 954325 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
+ 498 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

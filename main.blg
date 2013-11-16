@@ -2,18 +2,18 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: CollabFiltering.aux
-A level-1 auxiliary file: TemporalDynamics.aux
 A level-1 auxiliary file: MathematicalBackground.aux
+A level-1 auxiliary file: PredictionModels.aux
 A level-1 auxiliary file: ImplementationResults.aux
 The style file: plain.bst
 A level-1 auxiliary file: appendix.aux
 Database file #1: bibl.bib
 Warning--entry type for "NETFLIX_Prize:Online" isn't style-file defined
---line 301 of file bibl.bib
+--line 310 of file bibl.bib
 Warning--entry type for "IBM_BigData:online" isn't style-file defined
---line 308 of file bibl.bib
+--line 317 of file bibl.bib
 Warning--entry type for "BarackObama" isn't style-file defined
---line 316 of file bibl.bib
+--line 325 of file bibl.bib
 Warning--to sort, need author or key in IBM_BigData:online
 Too many commas in name 1 of "Paul C.Zikopoulos, Chris Eaton, Dirk deRoos, Thomas Deutsch, George Lapis" for entry IBM-BigData
 while executing---line 1049 of file plain.bst
@@ -44,45 +44,45 @@ while executing---line 1090 of file plain.bst
 Too many commas in name 1 of "Paul C.Zikopoulos, Chris Eaton, Dirk deRoos, Thomas Deutsch, George Lapis" for entry IBM-BigData
 while executing---line 1090 of file plain.bst
 Warning--empty year in IBM-BigData
-You've used 20 entries,
+You've used 21 entries,
             2118 wiz_defined-function locations,
-            639 strings with 7865 characters,
-and the built_in function-call counts, 6333 in all, are:
-= -- 635
-> -- 246
+            647 strings with 8028 characters,
+and the built_in function-call counts, 6723 in all, are:
+= -- 674
+> -- 269
 < -- 6
-+ -- 100
-- -- 78
-* -- 416
-:= -- 994
-add.period$ -- 58
-call.type$ -- 20
-change.case$ -- 95
++ -- 109
+- -- 86
+* -- 448
+:= -- 1061
+add.period$ -- 61
+call.type$ -- 21
+change.case$ -- 102
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 265
-empty$ -- 544
-format.name$ -- 78
-if$ -- 1372
+cite$ -- 27
+duplicate$ -- 276
+empty$ -- 570
+format.name$ -- 86
+if$ -- 1449
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 17
-newline$ -- 96
-num.names$ -- 36
-pop$ -- 117
+int.to.str$ -- 21
+missing$ -- 18
+newline$ -- 101
+num.names$ -- 38
+pop$ -- 122
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 83
 quote$ -- 0
-skip$ -- 208
+skip$ -- 215
 stack$ -- 0
-substring$ -- 382
-swap$ -- 66
+substring$ -- 412
+swap$ -- 67
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 76
+type$ -- 80
 warning$ -- 6
-while$ -- 62
-width$ -- 22
-write$ -- 208
+while$ -- 66
+width$ -- 23
+write$ -- 219
 (There were 12 error messages)

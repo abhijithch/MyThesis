@@ -143,17 +143,17 @@ data matrix, can be factorized as shown below,
 		R \\
                0  \end{array}\right), 
 \]	
-where $Q \in \mathbb{R}^{m \times m}$ is orthogonal and $R \in \mathbb{R}^{m
+where $Q \in \mathbb{R}^{m \times m}$ is orthogonal and $R \in \mathbb{R}^{n
 \times n}$ is upper triangular. 
 
 The main reason to factorize the data matrix are, 
 \begin{enumerate}
  \item Compact representation
- \item Representation in terms of \emph{basis} in column-space, row-space or
-both column and row space. 
+ \item Representation in terms of \emph{orthonormal basis} of column-space,
+row-space or both column and row space. 
 \end{enumerate}
 
-Below Figure ~\ref{fig:QR Factorization}, show how QR factorization achieves the
+Figure ~\ref{fig:QR Factorization}, show how QR factorization achieves the
 above goals, i.e., firstly compact representation, which is achieved by reducing
 the \emph{rank}$=k$. It can be shown that by optimally choosing the rank k, we
 get better performance. 
@@ -166,7 +166,42 @@ or characterizes the system. This means that the known information is used only
 from only one dimension. So this technique is more suitable for solving linear
 systems in least squares sense, as in Equation ~\ref{eq:4.1}, where only the
 column-space is sufficient, as the known vector \emph{b} lies in the column
-space. 
+space. \\
+
+We shall consider an example application, to study the concepts discussed. This
+example is obtained from \cite{Berrymatrices}.
+\begin{example}
+  Consider a text mining application, where we need to search for documents
+based
+on some queries. The documents are listed below, with the keywords highlighted. 
+
+\begin{description}
+%   \item[Document 1:] The \textbf{Google} \textbf{matrix} $P$ is a
+% model of the \textbf{Internet}.
+%   \item[Document 2:] $P_{ij}$ is nonzero if there is a \textbf{link} from the
+% \textbf{Web page} $j$ to $i$.
+%   \item[Document 3:] The \textbf{Google matrix} is used to \textbf{rank} all
+% \textbf{Web pages}.
+%   \item[Document 4:] The \textbf{ranking} is done by solving a \textbf{matrix
+% eigenvalue} problem. 
+%   \item[Document 5:] \textbf{England} dropped out of the top 10 in the
+%\textbf{
+% FIFA ranking}.   
+  \item[Document 1:] How to \textbf{bake bread} without \textbf{recipes}.
+  \item[Document 2:] The Classic Art of Viennese \textbf{Pastry}.
+  \item[Document 3:] Numerical \textbf{Recipes}: The art of Scientific
+Computing. 
+  \item[Document 4:] \textbf{Breads}, \textbf{Pastries}, \textbf{Pies} and
+\textbf{Cakes}: Quantity \textbf{Baking Recipes}.
+  \item[Document 5:] \textbf{Pastry}: A Book of Best French \textbf{Recipes}.
+\end{description}
+\end{example} 
+
+We shall create a \emph{Term-document matrix}, with the documents along the
+columns and keywords along the rows. The entries are the frequencies of the
+keywords in the corresponding documents. Let $A \in \mathbb{R}^{6 \times 5}$ be
+the \emph{TDM}:  \\
+
 \begin{figure}[h!]
 
 \includegraphics[width=0.9\textwidth]{QR_Fig.pdf}
@@ -174,17 +209,364 @@ space.
 \label{fig:QR Factorization}
 \end{figure}
 
+ 
+  $A$ =
+ $\begin{pmatrix}
+1 & 0 &	0 & 1 &	0 \\ 
+1 & 0 &	1 & 1 &	1 \\ 
+1 & 0 &	0 & 1 &	0 \\ 
+0 & 0 &	0 & 1 &	0 \\
+0 & 1 &	0 & 1 &	1 \\ 
+0 & 0 &	0 & 1 &	0 \\ 
+  \end{pmatrix} $ \in \mathbb{R}^{6 \times 5}
+  \hspace*{30mm}
+  $q$ =
+  $\begin{pmatrix}
+  1 \\
+  0 \\
+  0 \\
+  0 \\
+  0 \\
+  0 \\
+ \end{pmatrix} $ \in \mathbb{R}^{6}
+ 
+ The task would be to find all the documents within permissable proximity with
+the \emph{query}, "\emph{Baking}". 
 
-We shall consider an example application, to study the concepts discussed. This
-example is obtained from \cite{eld-mm:07}. 
-\begin{example}
- Consider a text mining application, where we need to search for documents based
-on some queries. The documents are listed below, with the keywords highlighted. 
-\end{example}
+Let us now find the basis for the column-space of matrix \emph{A}, using the
+\emph{QR factorization}, i.e., $A=QR$,
+% 
+% \begin{equation}
+% 
+% Q=
+%  \left( \begin{array}{ccccc|c}
+%          0 &        0 &  -0.0000 &   0.7246 &   0.1430 & -0.1923 \\   
+%          0 &        0 &  -0.0000 &  -0.0000 &  -0.6356 & -0.5882 \\
+%          0 &        0 &        0 &  -0.0000 &  -0.6356 &  0.3838 \\
+%    -0.5774 &        0 &  -0.2182 &  -0.3795 &   0.0159 &  0.2565 \\
+%    -0.5774 &        0 &   0.4364 &   0.0345 &  -0.1748 & -0.2445 \\
+%          0 &  -0.5774 &   0.4364 &   0.2760 &  -0.1271 &  0.4489 \\
+%    -0.5774 &        0 &  -0.2182 &   0.3450 &   0.1589 & -0.0121 \\
+%          0 &  -0.5774 &  -0.2182 &  -0.1380 &   0.0636 & -0.2244 \\
+%          0 &        0 &  -0.6547 &   0.3105 &  -0.3019 &  0.2044 \\
+%          0 &  -0.5774 &   0.2182 &  -0.1380 &   0.0636 & -0.2244 \\ 
+%           \end{array} \\
+%           
+%           
+%           \begin{array}{cccc}         
+%  -0.5848 &  -0.0609 &    0.0519 &  -0.3462 \\
+%   0.0870 &  -0.3462 &   -0.6010 &   0.2053 \\
+%  -0.0563 &   0.2053 &   -0.0085 &  -0.2942 \\
+%  -0.4856 &  -0.2942 &    0.2966 &   0.3741 \\
+%  -0.1299 &   0.3741 &    0.2525 &  -0.2332 \\
+%   0.0992 &  -0.2332 &   -0.2880 &  -0.0799 \\
+%   0.6155 &  -0.0799 &   -0.1262 &  -0.3834 \\
+%  -0.0496 &   0.6166 &    0.5490 &   0.1408 \\
+%  -0.0307 &   0.1408 &   -0.1262 &   0.6166 \\
+%  -0.0496 &  -0.3834 &   -0.2610 &  -0.0609 \\
+%   \end{array} \right)	
+%   \end{equation}
 
+
+   
+ 
+  
+ \begin{equation}
+ Q =
+\left( \begin{array}{rrrr|rr}
+   -0.5774 &       0 & -0.4082 & -0.0000 &  0.7071 & -0.0000 \\
+   -0.5774 &       0 &  0.8165 & -0.0000 &       0 & -0.0000 \\
+   -0.5774 &       0 & -0.4082 &  0.0000 & -0.7071 &  0.0000 \\
+         0 &       0 &       0 & -0.7071 & -0.0000 & -0.7071 \\
+         0 & -1.0000 &       0 &       0 &       0 &       0 \\
+         0 &       0 &       0 & -0.7071 & -0.0000 &  0.7071 \\
+\end{array} \right)
+\end{equation}
+
+\begin{equation}
+ R =
+\left( \begin{array}{rrrrr}
+   -1.0000 &       0 & -0.5774 & -0.7071 & -0.4082 \\
+         0 & -1.0000 &       0 & -0.4082 & -0.7071 \\
+         0 &       0 &  0.8165 & -0.0000 &  0.5774 \\
+         0 &       0 &       0 & -0.5774 &       0 \\ \hline
+         0 &       0 &       0 &       0 &       0 \\
+         0 &       0 &       0 &       0 &       0 \\
+
+\end{array} \right)
+\end{equation}
+
+We have the \emph{rank} of matrix A to be 4, and hence we have separated the
+first four columns in $Q$ and the first four rows in $R$. We show through below
+equations the formulae to compute the cosine of the angle between the query
+vector and all the documents.
+
+\begin{equation}
+ \cos(\theta)=\frac{a_{j}^Tq}{\|a_j\|_{2}\|q\|_{2}}
+ \label{eq:4.2}
+\end{equation}
+
+\begin{equation}
+ \cos(\hat{\theta})=\frac{r_{j}^T(Q_{A}^Tq)}{\|r_j\|_{2}\|q\|_{2}}
+ \label{eq:4.3}
+\end{equation}
+
+The Equation.~\ref{eq:4.2}, shows how to calulate the cosines using the
+original document vectors from the original \emph{TDM}.
+
+The Equation.~\ref{eq:4.3}, shows how to calulate the cosines using the
+document vectors reconstructed from the $Q_A$ matrix and the corresponding $r_j$
+vectors from the original $R$ matrix.
+
+The below Table. ~\ref{table:4.1}, lists the results using Equations.
+~\ref{eq:4.2}
+and ~\ref{eq:4.3}.
+
+
+\begin{table}[h]
+\begin{center}
+ 
+     \begin{tabular}{|c|c|c|c|c|c|}
+       \hline
+        & D1 & D2 & D3 & D4 & D5 \\ \hline
+       $\cos(\theta)$ & 0.5774 & 0 & 0 & 0.4082 & 0 \\        
+       $\cos(\hat{\theta})$, k=4 & 0.5774 & 0 & 0 & 0.4082 & 0 \\        
+       $\cos(\hat{\theta})$, k=3 & 0.5774 & 0 & 1.1e-16 & 0.4082 & 1.1e-16 \\
+       $\cos(\hat{\theta})$, k=2 & 0.5774 & 0 & 0.3333 & 0.4082 & 0.2357 \\
+\hline      
+         \end{tabular}
+    \caption{Cosine Values using QR}
+    \label{table:4.1}
+\end{center}
+\end{table}
+
+Since one of our main aim is to find a reasonable low-rank approximation of $A$,
+we have also shown the results for ranks, $k=4,3,2$. This rank reduction is done
+on the $R$ matrix, the rank of $R$ is the number of non-zero diagonal elements. 
+
+
+
+We shall add an \emph{Uncertainity matrix} $E$ to the original matrix $A$, since
+we shall be approximating the same. Hence if $R_A$ and $Q_A$ are the reduced
+versions of $R$ and $Q$, we have $A+E=Q_{A}R_{A}$ .
+
+For example, when we compute the cosine measure with reduced rank, $k=3$, the
+sub-matrix of $R$ is selected as shown below,
+\begin{equation}
+\begin{array} {lcl}
+  R & = &
+\left( \begin{array}{rrr|rr}
+   -1.0000 &       0 & -0.5774 & -0.7071 & -0.4082 \\
+         0 & -1.0000 &       0 & -0.4082 & -0.7071 \\
+         0 &       0 &  0.8165 & -0.0000 &  0.5774 \\ \hline
+         0 &       0 &       0 & -0.5774 &       0 \\ 
+         0 &       0 &       0 &       0 &       0 \\
+         0 &       0 &       0 &       0 &       0 \\
+
+\end{array} \right) \\ \\
+& = & \left( \begin{array}{cc}
+R_{11} & R_{12} \\
+0 & R_{22} \\
+
+\end{array} \right) \\
+\end{array}
+\end{equation}
+
+$R_A$, is obtained by making $R_{22}=0$, in $R$.
+
+\begin{equation}
+\begin{array} {lcl}
+  Q & = &
+\left( \begin{array}{rrr|rrr}
+   -0.5774 &       0 & -0.4082 & -0.0000 &  0.7071 & -0.0000 \\
+   -0.5774 &       0 &  0.8165 & -0.0000 &       0 & -0.0000 \\
+   -0.5774 &       0 & -0.4082 &  0.0000 & -0.7071 &  0.0000 \\
+         0 &       0 &       0 & -0.7071 & -0.0000 & -0.7071 \\
+         0 & -1.0000 &       0 &       0 &       0 &       0 \\
+         0 &       0 &       0 & -0.7071 & -0.0000 &  0.7071 \\
+
+\end{array} \right) \\ \\
+& = & \left( \begin{array}{cc}
+Q_{A} & Q_{A}^{\perp} \\
+\end{array} \right) \\
+\end{array}
+\end{equation}
+
+Now let us see how much, reducing the rank, effects the matrix $A$. 
+\[
+ \begin{array} {lcl}
+ E & = & (A+E)-A \\
+ & = & Q\begin{pmatrix}
+         R_{11} & R_{12} \\
+         0 & 0 \\
+        \end{pmatrix} - Q\begin{pmatrix}
+    R_{11} & R_{12} \\
+    0 & R_{22} \\
+    \end{pmatrix} \\
+& = & Q\begin{pmatrix}
+         0 & 0 \\
+         0 & -R_{22}\\
+        \end{pmatrix}
+\end{array}
+\]
+The Frobenius norm is \emph{invariant under orthogonal transformations}
+\cite{eld-mm:07}, we have, $\|E\|_{F}=\|R_{22}\|_{F}$. Now let us see the exact
+effect of the rank reduction, $k=3$. Since $\|A\|_{F}=\|R_{F}\|$,
+$\|E\|_{F}/\|A_{F}\|=\|R_{22}\|_{F}/\|R_{F}\|=0.258$. Hence by reducing the rank
+by one, we see there is around $26\%$ change in $A$. From the table of cosines,
+~\ref{table:4.1} it is evident that the uncertainities is suffeciently less. Let
+us further reduce the rank to $k=2$. Now the change is around $51\%$, hence this
+is not a good choice. 
+
+\section{Singular Value Decomposition}
+We have seen how \emph{QR Decomposition} gives a reduced rank \emph{basis} of
+the column space, but not of the row space of the TDM. It would be more
+efficient to make use of the information in the row space along with the column
+space, hence we would look into another technique which gives the basis of the
+column and row space. \emph{Singular Value Decomposition(SVD)}, helps us in
+achieving this. Also since we are trying to manipulate the rank of the matrix,
+it is critical to have good understanding of it. Theoretically the concept of
+rank is simple, however it is very tricky when it comes to numerical computation
+especially when working with sparse fuzzy datasets. In this context \emph{SVD}
+has inherent mathematical feature of giving the best rank-\emph{k} approximation
+with minimal changes to the original matrix. The fundamental contruct of the
+decomposition is as shown below,
+\begin{equation}
+ A=U \Sigma V^T, 
+\end{equation}
+where, $A\in \mathbb{R}^{m \times n}$, $U\in \mathbb{R}^{m \times m}$ is
+orthogonal, $\Sigma\in \mathbb{R}^{m \times n}$ is a diagonal matrix and $V\in
+\mathbb{R}^{n \times n}$ is orthogonal. The column vectors of $U$ consists of
+the \emph{right-singular} vectors of $A$ and the column vectors of $V$ consists
+of \emph{left-singular values} of $A$. The diagonal elements of $\Sigma$ form
+the singular values of $A$.
+\begin{equation}
+\underbrace{
+\begin{pmatrix}
+ * & * & * \\
+ * & * & * \\
+ * & * & * \\
+ * & * & * \\
+ * & * & * \\
+ \end{pmatrix}}_\textrm{A}
+ = 
+\underbrace{
+\begin{pmatrix}
++ & + & + & + & + \\
++ & + & + & + & + \\
++ & + & + & + & + \\
++ & + & + & + & + \\
++ & + & + & + & + \\
+\end{pmatrix}}_\textrm{U}\underbrace{
+\begin{pmatrix}
+\sigma_1 &  &  \\
+  & \sigma_2 &  \\
+  &  & \sigma_3 \\
+  &  &  \\
+  &  & \\
+\end{pmatrix}}_\textrm{S} \underbrace{
+ \begin{pmatrix}
+ \times  & \times & \times \\
+ \times  & \times & \times \\
+ \times  & \times & \times \\
+ \end{pmatrix}}_\textrm{V}
+\end{equation}
+
+Before moving ahead let us see the how \emph{SVD} treats the \emph{TDM} of the
+previous example. Analogous to the \emph{QR}, we have the rank $K$, to be the
+number of non-zero diagonals of $\Sigma$. Also the columns of $U$ form the basis
+of the column space of $A$ and the rows of $V^T$ form the basis of the row space
+of $A$. The \emph{SVD} of the matrix $A$ is as shown below,
+
+\[
+\begin{array} {lcl}
+  U & = &
+\left( \begin{array}{rrrrr}
+    0.2670 &  0.2567 &  0.5308 & -0.2847 & -0.4117 \\
+    0.7479 &  0.3981 & -0.5249 &  0.0816 &  0.0000 \\
+    0.2670 &  0.2567 &  0.5308 & -0.2847 &  0.4117 \\
+    0.1182 &  0.0127 &  0.2774 &  0.6394 & -0.5749 \\
+    0.5198 & -0.8423 &  0.0838 & -0.1158 & -0.0000 \\
+    0.1182 &  0.0127 &  0.2774 &  0.6394 &  0.5749 \\
+\end{array} \right)
+\end{array}
+\]
+\[
+\begin{array} {lcl}
+  \Sigma & = &
+\left( \begin{array}{rrrrr}
+    1.6950 &       0 &       0 &       0 &       0 \\
+         0 &  1.1158 &       0 &       0 &       0 \\
+         0 &       0 &  0.8403 &       0 &       0 \\
+         0 &       0 &       0 &  0.4195 &       0 \\
+         0 &       0 &       0 &       0 &  0.0000 \\
+\end{array} \right)
+\end{array}
+\]
+\[
+\begin{array} {lcl}
+  V & = &
+\left( \begin{array}{rrrrr}
+   0.4366 &  0.4717 &  0.3688 & -0.6715 &       0 \\
+    0.3067 & -0.7549 &  0.0998 & -0.2760 &  0.5000 \\
+    0.4412 &  0.3568 & -0.6247 &  0.1945 &  0.5000 \\
+    0.4909 &  0.0346 &  0.5711 &  0.6571 &  0.0000 \\
+    0.5288 & -0.2815 & -0.3712 & -0.0577 & -0.7071 \\
+\end{array} \right)
+\end{array}
+\]
+
+Let $A_k=U_{k} \Sigma_{k}V_{k}$, be the rank-$k$ approximation of the
+\emph{TDM}, $A$. In order to access the $j^{th}$ vector from $A_k$, i.e., the
+$j^{th}$ document of the \emph{TDM}, we use $e_j$ which is the $j^{th}$
+\emph{canonical} vector of dimension $d$, and is given by $A_{k}e_{j}$. The
+\emph{cosines} between the documents and query can be computed as shown below,
+
+\begin{equation}
+\begin{array}{lcl}
+\cos(\theta)&=&\dfrac{(A_{k}e_{j})^{T}q}{\|A_{k}e_{k}\|_{2}\|q\|_2} \\ \\
+& = &
+\dfrac{(U_{k}\Sigma_{k}V_{k}e_{j})^{T}q}{\|U_{k}\Sigma_{k}V_{k}e_{k}\|_{2}
+\|q\|_2} \\ \\
+& = &
+\dfrac{(U_{k}\Sigma_{k}V_{k}e_{j})^{T}q}{\|U_{k}\Sigma_{k}V_{k}e_{k}\|_{2}
+\|q\|_2} \\ \\
+& = &
+\dfrac{e_{k}^TV_{k}\Sigma_{k}(U^{T}q)}{\|\Sigma_{k}V_{k}e_{k}\|_{2}
+\|q\|_2} \\ \\
+\end{array}
+\end{equation}
+
+Now let us calculate the cosine values using the \emph{SVD}, the are as shown in
+the table ~\ref{table:3.2},
+
+\begin{table}[h]
+\begin{center}
+ 
+     \begin{tabular}{|c|c|c|c|c|c|}
+       \hline
+        & D1 & D2 & D3 & D4 & D5 \\ \hline
+       $\cos(\theta)$ & 0.5774 & 0 & 0 & 0.4082 & 0 \\        
+       $\cos(\hat{\theta})$, k=4 & 0.5773 & -2.2e-16 & -4.1e-16 & 0.4082
+&-1.9e-16 \\        
+       $\cos(\hat{\theta})$, k=3 &0.5080 & -0.1445 & 0.1348 & 0.4432 & -0.0056
+\\
+       $\cos(\hat{\theta})$, k=2 &0.5633 & -0.1757 & 0.4151 & 0.4151 & 0.0650 \\
+\hline      
+         \end{tabular}
+    \caption{Cosine Values using SVD}
+    \label{table:3.2}
+\end{center}
+\end{table}
+
+Let us also see how much change is there by reducing the rank to 3, we have
+$\|A-A_3\|_{F} = \sigma_4 = 0.4195$, and $\|A-A_3\|_{F}/\|A\|_F = 0.1876$. Hence
+only $18\%$ change in $A$ is seen by reducing the rank to 3. By reducing the
+rank to 2 we see a change of $42\%$. This is clearly better than the results
+obtained using \emph{QR Factorization}. 
 
 \section{Introduction to Matrix Factorization}
-Since this chapter is dedicated to the mathematical principles that drives the
+Since this chapter is dedicated to the mathematical principles that drives the 
 prediction models, we can begin with a direct statement, the data matrix is
 factorized into simpler matrices which are constrained on its dimensionality.
 Different types of constraints can be imposed on the factorization, but for the
@@ -218,7 +600,7 @@ can generate negative elements. Instead we might want to compute the rank-$k$
 approximation in the following way \cite{eld-mm:07}, \\
 \[
   A\approx WH,		W,H\geq0
-\] \\
+\] 
 
 \section{Matrix approximation using SVD}
 \begin{theorem}[SVD]
@@ -279,22 +661,34 @@ where $p=min(m,n)$.
 \end{theorem}
 
 \section{Matrix approximation using Alternating Least Squares}
-\subsection{Disadvantage of SVD}
+\subsection{Irregularity in Data}
 In this thesis work we have done the implementation using MATLAB, and we use the
 function $[U,S,V]=svds(A,k)$ to obtain the singular value decomposition of a
 sparse matrix $A$ of rank $k$. However elegant is the method of $SVD$, it
-unfortunately fails to produce good predictions. The $SVD$ approximates a rating
+unfortunately fails to produce expected quality of predictions. The $SVD$
+approximates a rating
 matrix by minimizing the \emph{Frobenius norm} of $|R-\hat{R}|$. This is
-equvivalent to minimizing the RMSE between individual elements in the rating
+equivalent to minimizing the RMSE between individual elements in the rating
 matrix. Since the majority of the elements are \emph{unknowns}, and it is our
-belief that MATLAB while calulating \emph{SVD} considers these \emph{unknowns}
-as zeros, whereas these are not zeros and hence this approach is flawed.
+belief that MATLAB while calculating \emph{SVD} considers these \emph{unknowns}
+as zeros, whereas these are not zeros and hence this approach is questionable.
 In the Appendix A, we give a detailed explanation as to why SVD is not
 appropriate to find the low-rank matrix approximation in our case, where our
 data matrix is very sparse($1\%$-dense). 
 
-\subsection{Problem formulation w.r.t ALS}
+\subsection{Alternating Least Squares}
+Let us now try to factorize a given matrix, $A$, in a least squares sense. Let
+us assume that the number of movies to be $m$, the number of users to be $n$ and
+the reduced rank, $k$. Below figure ~\ref{fig:ALS Factorization} shows the basic
+structure of the factorization. 
 
+\begin{figure}[h!]
+\includegraphics[width=0.9\textwidth]{ALS_FIG.pdf}
+\caption{ALS Factorization with reduced rank, $k$}
+\label{fig:ALS Factorization}
+\end{figure}
+
+\subsection{Problem formulation w.r.t ALS}
 This approach is based on the article \cite{Zhou:2008:LPC:1424237.1424269}.
 Let $U=[\bold{u_i}]$ be the user feature matrix where $\bold{u_i} \subseteq
 \mathbb{R}^{n_f}$ and $i=1,2,...,n_u$, and let $M=\bold{m_j}$ be the item or

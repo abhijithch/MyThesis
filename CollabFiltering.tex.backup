@@ -73,8 +73,8 @@ value(threshold) can be selected for making recommendations. Hence this problem
 can be viewed as a \emph{matrix completion} problem. In this thesis work, we
 will compute the unknowns for a certain subset called the \emph{test set}. \\
 
-Let us denote the completed matrix, or rather the reconstructed matrix by
-\emph{$\hat_{R}$}. We intend to obtain the
+Let us denote the completed matrix, or rather the reconstructed matrix	 by
+l\emph{$\hat_{R}$}. We intend to obtain the
 \emph{$\hat_{R}$}, by reproducing it through a simple product of two matrices
 with reduced \emph{inner dimension}. Let $P\in\mathbb{R}^{u,f}$ and
 $Q\in\mathbb{R}^{f,m}$ are the two matrices with reduced inner dimension

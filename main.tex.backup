@@ -14,14 +14,17 @@
       \usepackage{graphicx}
       \usepackage{algpseudocode}
       \usepackage{algorithmicx}
+      %\usepackage{algorithm2e}
+      %\usepackage{hyperref}
       
       %\usetikzlibrary{positioning,chains,fit,shapes,calc}
 
-
+      \setcounter{MaxMatrixCols}{20} 
       \DeclareMathOperator{\diag}{diag}
       \DeclareMathOperator{\rank}{rank}
       \newcommand{\x}{\times}
       \newtheorem{proposition}[theorem]{Proposition}
+      \newcommand*{\horzbar}{\rule[.5ex]{10ex}{0.5pt}}
 %
 
 \author{Abhijith Chandraprabhu}
@@ -68,7 +71,12 @@ Decomposition, and owing to the inherent nature of SVD to handle
 sparse data inefficiently an alternate method based on Alternate Least Squares
 was used.}
 
-\acknowledgements{ Parents, Berkant Savas, Lars Elden, Niklas Ekvall, Opposition person.}
+\acknowledgements{I would like to thank Lars Eldén, under whose tutelage I have
+been introduced to the world of scientific computing. I would like to thank my
+supervisor Berkant Savas, whose patience and expert supervision has enabled me
+to complete this thesis work. Berkant has been a great guide and has shared his
+insights and thoughts, and suggested ways when I was stuck. I would like to thank National Supercomputer
+Centre, Linköping, for providing the clusters for my thesis work. }
 %\useHyperRef
 
 \begin{document}
@@ -77,8 +85,9 @@ was used.}
 
 \include{introduction}
 \include{CollabFiltering}
-\include{TemporalDynamics}
+%\include{TemporalDynamics}
 \include{MathematicalBackground}
+\include{PredictionModels}
 \include{ImplementationResults}
 \bibliographystyle{plain}
 \bibliography{bibl}

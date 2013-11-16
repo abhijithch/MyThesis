@@ -23,6 +23,11 @@ James Bennett, Stan Lanning, and Netflix Netflix.
 \newblock The netflix prize.
 \newblock In {\em In KDD Cup and Workshop in conjunction with KDD}, 2007.
 
+\bibitem{Berrymatrices}
+Michael~W. Berry, Zlatko Drmač, Elizabeth, and R.~Jessup.
+\newblock Matrices, vector spaces, and information retrieval.
+\newblock {\em SIAM Review}, 41:335--362, 1999.
+
 \bibitem{Ding:2005:TWC:1099554.1099689}
 Yi~Ding and Xue Li.
 \newblock Time weight collaborative filtering.

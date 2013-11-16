@@ -17,7 +17,7 @@ into the factor model for the new predicted ratings. We have experimented with
 three types of biasing techniques, first without any bias, second, with only
 static bias, and third, with temporal movie biases. Moving ahead to the
 factorization itself, we start with the SVD technique and owing to the
-disadvantages of this method we develop a new factorization technique based on
+issue of the MATLAB method svds treating the unknown ratings as zeros, we develop a new factorization technique based on
 weighted ALS. Within the ALS algorithm we have two types of initialization
 methods, hence leading to ALS-I and ALS-II. The table below shows the various
 models built by combining the different biasing and factorizing techniques
@@ -42,42 +42,27 @@ mentioned.
 
 \subsubsection{SVD}
 While using this method, which is [U,S,V]=svds(R,n), where $R$ is the Rating
-matrix and $n$ is the rank of the approximatin matrix. We test the models for
-different values of $n$, the maximum being $n$=200. The predictions are made in
-the following way,
-
-\begingroup
-\begin{center}
- 
-
-\begin{align*}
- & [U,S,V] = svds(R,200) \\
- & P_u = U(:,1:200); \\
- & Q_i=S(1:l,1:l)*Vt(1:200,:); \\
- & Predicted_rating(i,j)=P_u(i,:)*Q_i(:,j); \\
-\end{align*}
-\caption{SVD technique}
-\end{center}
-
-\endgroup
+matrix and $n$ is the rank of the approximating matrix. We test the models for
+different values of $n$, the maximum being $n$=200. 
 
 \subsubsection{ALS-I}
 This is the type-I ALS method, where the M matrix is initialized by replacing
 the assigning the first row with the mean values of the movies, and filling in
 random values at the remaining places. 
 
-\begin{align*}
- & \bold{Step 1.} & Initialize the M matrix, by assigning the means of movies as
-the first\\
- &                & row entry, and small random numbers in the remaining
-entries. \\
- & \bold{Step 2.} & With this M, solve for U in order to minimize the loss
-function.\\
- & \bold{Step 3.} & Now Keep the U matrix from step 2 fixed, and update the M
-matrix.\\
- & \bold{Step 4.} & Repeat these iterations until required convergence criteria
-is met.\\
-\end{align*}
+
+
+\begin{enumerate}
+ \item Initialize the M matrix, by assigning the means of movies as
+the first row entry, and small random numbers in the remaining entries. 
+ \item  With this M, solve for U in order to minimize the loss
+function.
+ \item Now Keep the U matrix from step 2 fixed, and update the M
+matrix.
+ \item Repeat these iterations until required convergence criteria
+is met.
+\end{enumerate}
+
 
 \subsubsection{ALS-II}
 This is the type-II ALS method, where the M matrix is initialized by doing an
@@ -86,25 +71,25 @@ SVD on the initial rating matrix R, as shown below:
 \begingroup
 \begin{center}
 \begin{align*}
-& [U1,S1,V1]=svds(R_Hat_bin,100) \\
-& M=S*V' \\
+& [U1,S1,V1]=svds(\hat{R},100) \\
+& M=S1*V1' 
 \end{align*}
 \caption{SVD Initialization of M}
 \end{center}
 \endgroup
 
 
-\begin{align*}
- & \bold{Step 1.} & \left Initialize the M matrix as shown above\\
- &                & \left row entry, and small random numbers in the remaining
-entries. \\
- & \bold{Step 2.} & \left With this M, solve for U in order to minimize the loss
-function.\\
- & \bold{Step 3.} & \left Now Keep the U matrix from step 2 fixed, and update
-the M matrix.\\
- & \bold{Step 4.} & \left Repeat these iterations until required convergence
-criteria is met.\\
-\end{align*}
+\begin{enumerate}
+ \item Initialize the M matrix as shown above row entry, and small random
+numbers in the remaining
+entries. 
+ \item With this M, solve for U in order to minimize the loss
+function.
+ \item Now Keep the U matrix from step 2 fixed, and update
+the M matrix.
+ \item Repeat these iterations until required convergence
+criteria is met.
+\end{enumerate}
 
 \subsubsection{$NonTemp_{mu}$}
 This is the non-temporal model with the mean of all movies included in it, it is
@@ -237,7 +222,8 @@ the mood swings, the user could also alter the rating scale over time. We could
 for further work consider the various user related effects and incude them into
 the model in order to get more accurate predictions. 
 
-Owing to the disadvantages of the sparse SVD of MATLAB, we have used an
+Owing to the issue of unknown ratings being treated as zeros by the sparse SVD
+of MATLAB, we have used an
 alternative method. Instead it is possible to develop a factorization technique
 based on SVD, but which is regularised. This approach was suggested initially by
 Simon Funk \cite{Paterek_RegSVD}.
